@@ -1,0 +1,1143 @@
+
+/* =====================================================
+   PORTAFOLIO PROFESIONAL — MILITZA MONTALVO
+   INICIO | EDITORIAL LIME
+===================================================== */
+
+:root {
+  --lime: #C5E83B;
+  --lime-dark: #A7CE21;
+  --ink: #151A12;
+  --paper: #FAFAF5;
+  --white: #FFFFFF;
+  --muted: #686B61;
+  --line: rgba(21,26,18,.17);
+  --transition: .35s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 62px;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =====================================================
+   01. NAVEGACIÓN
+===================================================== */
+
+.mainHeader {
+  width: 100%;
+  height: 62px;
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  background: rgba(255,255,255,.98);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  flex-shrink: 0;
+}
+
+.mainHeader nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.mainNav a {
+  position: relative;
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.mainNav a:hover,
+.mainNav a.active {
+  font-weight: 800;
+}
+
+.mainNav a.active::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  background: var(--lime);
+}
+
+.backHome {
+  padding: 8px 15px;
+  border: 1px solid var(--ink);
+  border-radius: 5px;
+  background: var(--lime);
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.backHome:hover {
+  background: var(--ink);
+  color: var(--lime);
+}
+
+/* =====================================================
+   02. PORTADA PRINCIPAL
+===================================================== */
+
+.skillsHero {
+  position: relative;
+  isolation: isolate;
+
+  width: 100%;
+  height: calc(100svh - 62px);
+  min-height: 520px;   /* antes 680px */
+  max-height: 900px;
+
+  overflow: hidden;
+
+  background-color: var(--lime);
+  background-image: url("images/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--ink);
+}
+
+/* =====================================================
+   03. INFORMACIÓN SUPERIOR
+===================================================== */
+
+.heroTop {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  right: 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 8;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.heroTag {
+  padding: 9px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 30px;
+  background: rgba(197,232,59,.55);
+}
+
+.heroNumber {
+  font-weight: 800;
+}
+
+/* =====================================================
+   04. IDENTIDAD Y NOMBRE
+===================================================== */
+
+.heroIdentity {
+  position: absolute;
+
+  left: 6%;
+  bottom: 19%;
+
+  width: 38%;
+
+  z-index: 5;
+}
+
+.heroEyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.heroIdentity h1 {
+  margin: 10px 0;
+
+  font-size: clamp(45px, 5.3vw, 78px);
+  font-weight: 800;
+  line-height: .9;
+  letter-spacing: -4px;
+}
+
+.heroIdentity h1 span {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--ink);
+}
+
+.heroIdentity p {
+  max-width: 420px;
+  font-size: 11px;
+  line-height: 1.9;
+  font-weight: 500;
+}
+
+/* =====================================================
+   05. FOTOGRAFÍA CENTRAL
+===================================================== */
+
+.heroProfile {
+  position: absolute;
+
+  width: 40%;
+  height: 91%;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.heroPortrait {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  filter: grayscale(100%);
+  cursor: pointer;
+
+  transition:
+    filter .7s ease,
+    transform .7s ease;
+}
+
+.heroPortrait:hover {
+  filter: grayscale(0%);
+  transform: scale(1.035);
+}
+
+/* =====================================================
+   06. HERRAMIENTAS FLOTANTES
+===================================================== */
+
+.floatingTools {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.toolFloat {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 4px 13px;
+
+  background: rgba(255,255,255,.97);
+  color: var(--ink);
+
+  border: 1.5px solid var(--ink);
+  border-radius: 12px;
+
+  box-shadow: 4px 4px 0 var(--ink);
+
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  animation: floating 4.5s ease-in-out infinite;
+}
+
+.toolFloat img {
+  width: 29px;
+  height: 29px;
+  object-fit: contain;
+}
+
+.toolExcel {
+  top: 18%;
+  left: 50%;
+  rotate: -7deg;
+}
+
+.toolSheets {
+  top: 72%;
+  right: 70%;
+  rotate: 7deg;
+  animation-delay: .5s;
+}
+
+.toolScript {
+  top: 29%;
+  left: 5%;
+  rotate: 5deg;
+  animation-delay: 1s;
+}
+
+.toolHTML {
+  top: 53%;
+  right: 28%;
+  rotate: -6deg;
+  animation-delay: 1.5s;
+}
+
+.toolCSS {
+  top: 43%;
+  right: 3%;
+  rotate: 8deg;
+  animation-delay: 2s;
+}
+
+/* =====================================================
+   07. ANIMACIONES
+===================================================== */
+
+@keyframes floating {
+  0%, 100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -10px;
+  }
+}
+
+/* =====================================================
+   08. ÁREAS DE FORTALEZA
+===================================================== */
+
+.strengthHeading {
+  position: absolute;
+  left: 6%;
+  bottom: 7%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  z-index: 8;
+}
+
+.strengthHeading span {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.strengthHeading h2 {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.strengthButtons {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.strengthButtons span {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 14px;
+
+  background: var(--ink);
+  color: var(--white);
+
+  border: 1.5px solid var(--ink);
+  border-radius: 11px;
+
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 600;
+  white-space: nowrap;
+
+  box-shadow: 4px 4px 0 rgba(0,0,0,.85);
+
+  pointer-events: auto;
+  cursor: default;
+
+  animation: floating 4.5s ease-in-out infinite;
+
+  transition: background .3s ease,
+              color .3s ease,
+              box-shadow .3s ease;
+}
+
+/* DISTRIBUCIÓN */
+
+.strengthOne {
+  top: 62%;
+  left: 5%;
+  rotate: -6deg;
+}
+
+.strengthTwo {
+  top: 22%;
+  right: 15%;
+  rotate: 5deg;
+  animation-delay: .8s;
+}
+
+.strengthThree {
+  top: 24%;
+  left: 24%;
+  rotate: -5deg;
+  animation-delay: 1.4s;
+}
+
+.strengthFour {
+  top: 77%;
+  right: 7%;
+  rotate: 6deg;
+  animation-delay: 2s;
+}
+
+.strengthButtons span:hover {
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+
+/* =====================================================
+   09. INFORMACIÓN INFERIOR
+===================================================== */
+
+.heroBottom {
+  position: absolute;
+  right: 5%;
+  bottom: 2.5%;
+
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  z-index: 8;
+
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .8px;
+}
+
+/* =====================================================
+   10. ESTILOS GENERALES DE SECCIONES
+===================================================== */
+
+main > section:not(.skillsHero) {
+  width: 100%;
+  padding: 100px 9%;
+  scroll-margin-top: 62px;
+}
+
+.sectionLabel {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: var(--lime-dark);
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+
+  margin-bottom: 55px;
+}
+
+.sectionHeading h2,
+.worldviewContent h2 {
+  font-size: clamp(35px, 5vw, 57px);
+  line-height: 1;
+  letter-spacing: -2.5px;
+  font-weight: 800;
+}
+
+.sectionHeading > div:first-child {
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   11. SOBRE MÍ
+===================================================== */
+
+.identification {
+  background: var(--paper);
+}
+
+.identificationContent {
+  display: grid;
+  grid-template-columns: .8fr 1.4fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.identificationPhoto {
+  width: 100%;
+  max-width: 370px;
+  height: 440px;
+
+  overflow: hidden;
+  background: var(--lime);
+  border-radius: 3px;
+}
+
+.identificationPhoto img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(100%);
+  transition: var(--transition);
+}
+
+.identificationPhoto:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.035);
+}
+
+.identificationInfo h3 {
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 8px;
+}
+
+.academicProgram {
+  color: var(--lime-dark);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.sobremi {
+  max-width: 690px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.personalData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 30px;
+
+  padding-top: 5px;
+}
+
+.dataItem span {
+  display: block;
+  margin-bottom: 5px;
+
+  color: var(--lime-dark);
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.dataItem p {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* =====================================================
+   12. MISIÓN Y VISIÓN
+===================================================== */
+
+.missionVision {
+  background: var(--white);
+}
+
+.misionvisionintro {
+  max-width: 540px;
+}
+
+.misionvisionintro p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.missionVisionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.statementCard {
+  min-height: 300px;
+  padding: 42px;
+  border-radius: 12px;
+  background: var(--paper);
+  transition: var(--transition);
+}
+
+.statementCard:hover {
+  border-color: none;
+  border-radius: 12px;
+  transform: translateY(-6px);
+  box-shadow: 8px 8px 0 rgba(197,232,59,.4);
+}
+
+.cardNumber {
+  display: block;
+  color: var(--lime-dark);
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+
+  margin-bottom: 35px;
+}
+
+.statementCard h3 {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.statementCard p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* =====================================================
+   13. OBJETIVOS
+===================================================== */
+
+.objectives {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.objectives .sectionLabel {
+  color: var(--lime);
+}
+
+.objectives .sectionHeading {
+  margin-bottom: 15px;
+}
+
+.objectivesContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.objectiveItem {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.objectiveItem > span {
+  color: var(--lime);
+  font-size: 37px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.objectiveItem h3 {
+  max-width: 750px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.objectiveItem p {
+  max-width: 900px;
+  color: rgba(255,255,255,.7);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* =====================================================
+   14. COSMOVISIÓN
+===================================================== */
+
+.worldview {
+  background: var(--lime);
+  color: var(--ink);
+  text-align: center;
+}
+
+.worldviewContent {
+  max-width: 850px;
+  margin: auto;
+}
+
+.worldview .sectionLabel {
+  color: rgba(21,26,18,.7);
+}
+
+.worldviewContent h2 {
+  margin-bottom: 35px;
+}
+
+.worldviewContent p {
+  font-size: 13px;
+  line-height: 2.2;
+  text-align: justify;
+}
+
+/* =====================================================
+   15. PIE DE PÁGINA
+===================================================== */
+
+.mainFooter {
+  min-height: 85px;
+  padding: 22px 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background: var(--white);
+}
+
+.mainFooter p {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: .4px;
+}
+
+.mainFooter > a:last-child {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* =====================================================
+   16. TABLETS
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .mainHeader {
+    padding: 0 4%;
+    gap: 15px;
+  }
+
+  .mainNav {
+    gap: 18px;
+  }
+
+  .skillsHero {
+    min-height: 650px;
+  }
+
+  .heroIdentity {
+    left: 5%;
+    width: 42%;
+  }
+
+  .heroProfile {
+    width: 45%;
+  }
+
+  .heroIdentity h1 {
+    font-size: clamp(43px, 7vw, 62px);
+  }
+
+  .toolFloat {
+    padding: 7px 10px;
+    font-size: 9px;
+  }
+
+  .toolFloat img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .strengthButtons span {
+    padding: 9px 12px;
+    font-size: 9px;
+  }
+
+  main > section:not(.skillsHero) {
+    padding: 80px 6%;
+  }
+
+  .identificationContent {
+    gap: 35px;
+    grid-template-columns: .8fr 1.2fr;
+  }
+
+  .identificationPhoto {
+    height: 360px;
+  }
+
+  .sectionHeading {
+    gap: 25px;
+  }
+
+  .statementCard {
+    padding: 30px;
+  }
+}
+
+/* =====================================================
+   17. MÓVILES
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .mainHeader {
+    height: auto;
+    min-height: 95px;
+
+    padding: 10px 5%;
+
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .mainNav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .mainNav a {
+    font-size: 9px;
+  }
+
+  .backHome {
+    padding: 7px 10px;
+    font-size: 9px;
+  }
+
+  /* PORTADA */
+
+  .skillsHero {
+    height: 760px;
+    min-height: 760px;
+    max-height: none;
+
+    background-position: center;
+  }
+
+  .heroTop {
+    top: 3%;
+    left: 5%;
+    right: 5%;
+    font-size: 8px;
+  }
+
+  .heroTag {
+    padding: 7px 10px;
+  }
+
+  .heroProfile {
+    width: 90%;
+    height: 57%;
+    bottom: 18%;
+  }
+
+  /* NOMBRE */
+
+  .heroIdentity {
+    top: 12%;
+    left: 5%;
+    bottom: auto;
+
+    width: 90%;
+    text-align: center;
+  }
+
+  .heroIdentity h1 {
+    font-size: 39px;
+    letter-spacing: -2px;
+  }
+
+  .heroIdentity p {
+    max-width: 310px;
+    margin: auto;
+    font-size: 9px;
+  }
+
+  .heroEyebrow {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  /* HERRAMIENTAS */
+
+  .toolFloat {
+    gap: 5px;
+    padding: 5px 7px;
+    font-size: 7px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 var(--ink);
+  }
+
+  .toolFloat img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .toolExcel {
+    top: 36%;
+    left: 2%;
+  }
+
+  .toolSheets {
+    top: 38%;
+    right: 2%;
+  }
+
+  .toolScript {
+    top: 24%;
+    left: 3%;
+  }
+
+  .toolHTML {
+    top: 70%;
+    right: 2%;
+  }
+
+  .toolCSS {
+    top: 50%;
+    right: 0;
+  }
+
+  /* FORTALEZAS */
+
+  .strengthHeading {
+    left: 5%;
+    bottom: 13%;
+  }
+
+  .strengthHeading h2 {
+    font-size: 9px;
+  }
+
+  .strengthButtons span {
+    padding: 7px 9px;
+    font-size: 8px;
+    border-radius: 8px;
+  }
+
+  .strengthOne {
+    top: 59%;
+    left: 2%;
+  }
+
+  .strengthTwo {
+    top: 84%;
+    left: auto;
+    right: 3%;
+  }
+
+  .strengthThree {
+    top: 73%;
+    right: 2%;
+  }
+
+  .strengthFour {
+    top: 34%;
+    right: 3%;
+  }
+
+  .heroBottom {
+    display: none;
+  }
+
+  /* SECCIONES */
+
+  main > section:not(.skillsHero) {
+    padding: 65px 6%;
+  }
+
+  .sectionHeading {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .sectionHeading h2,
+  .worldviewContent h2 {
+    font-size: 38px;
+  }
+
+  .misionvisionintro {
+    margin-top: 22px;
+  }
+
+  /* IDENTIFICACIÓN */
+
+  .identificationContent {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .identificationPhoto {
+    max-width: 100%;
+    height: 390px;
+  }
+
+  .identificationInfo h3 {
+    font-size: 28px;
+  }
+
+  .sobremi {
+    font-size: 11px;
+  }
+
+  .personalData {
+    gap: 20px 12px;
+  }
+
+  .dataItem p {
+    font-size: 10px;
+  }
+
+  /* MISIÓN Y VISIÓN */
+
+  .missionVisionGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .statementCard {
+    padding: 27px;
+    min-height: auto;
+  }
+
+  .statementCard h3 {
+    font-size: 24px;
+  }
+
+  /* OBJETIVOS */
+
+  .objectiveItem {
+    grid-template-columns: 45px 1fr;
+    gap: 13px;
+    padding: 28px 0;
+  }
+
+  .objectiveItem > span {
+    font-size: 27px;
+  }
+
+  .objectiveItem h3 {
+    font-size: 15px;
+  }
+
+  .objectiveItem p {
+    font-size: 11px;
+  }
+
+  /* COSMOVISIÓN */
+
+  .worldviewContent p {
+    font-size: 11px;
+    line-height: 2;
+  }
+
+  /* FOOTER */
+
+  .mainFooter {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 22px 5%;
+  }
+
+  .mainFooter p {
+    order: 3;
+    width: 100%;
+    font-size: 9px;
+  }
+}
+
+/* =====================================================
+   18. ACCESIBILIDAD
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+}

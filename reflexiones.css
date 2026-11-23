@@ -1,0 +1,281 @@
+/* =====================================================
+   PORTAFOLIO PROFESIONAL — MILITZA MONTALVO
+   REFLEXIÓN FINAL | Editorial Lime, dinámico y cercano
+===================================================== */
+
+:root {
+  --lime: #C5E83B;
+  --lime-dark: #A7CE21;
+  --ink: #151A12;
+  --paper: #FAFAF5;
+  --white: #FFFFFF;
+  --muted: #686B61;
+  --line: rgba(21,26,18,.17);
+  --on-ink: rgba(255,255,255,.78);
+  --radius: 4px;
+  --header-h: 62px;
+  --transition: .35s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+
+body { min-height: 100vh; background: var(--paper); color: var(--ink); overflow-x: hidden; }
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+
+/* ---------- NAVEGACIÓN ---------- */
+
+.mainHeader {
+  position: sticky; top: 0; z-index: 50;
+  width: 100%; height: var(--header-h); padding: 0 7%;
+  display: flex; align-items: center; justify-content: space-between; gap: 25px;
+  background: rgba(255,255,255,.98);
+}
+
+.logo { font-size: 23px; font-weight: 800; letter-spacing: -2px; flex-shrink: 0; }
+
+.mainHeader nav { flex: 1; display: flex; justify-content: center; }
+.mainNav { display: flex; align-items: center; justify-content: center; gap: 35px; list-style: none; }
+
+.mainNav a { position: relative; font-size: 10px; font-weight: 500; white-space: nowrap; transition: var(--transition); }
+.mainNav a:hover, .mainNav a.active { font-weight: 800; }
+.mainNav a.active::after {
+  content: ""; position: absolute; left: 50%; bottom: -10px;
+  width: 22px; height: 3px; transform: translateX(-50%); background: var(--lime);
+}
+
+.backHome {
+  padding: 8px 15px; border: 1px solid var(--ink); border-radius: 3px;
+  background: var(--lime); font-size: 9px; font-weight: 700; white-space: nowrap;
+  transition: var(--transition);
+}
+.backHome:hover { background: var(--ink); color: var(--lime); }
+
+/* ---------- ETIQUETAS Y BOTONES ---------- */
+
+.sectionLabel { display: inline-block; margin-bottom: 8px; color: var(--lime-dark); font-size: 10px; font-weight: 800; letter-spacing: 2px; }
+
+.heroButton, .ghostButton {
+  display: inline-block; padding: 12px 26px;
+  border: 1.5px solid var(--ink); border-radius: 3px;
+  font-size: 11px; font-weight: 700; transition: var(--transition);
+}
+.heroButton { background: var(--ink); color: var(--lime); }
+.ghostButton { background: transparent; color: var(--ink); }
+.heroButton:hover { background: var(--white); color: var(--ink); transform: translateY(-3px); }
+.ghostButton:hover { background: var(--ink); color: var(--lime); transform: translateY(-3px); }
+
+/* ---------- PORTADA (cabe en una pantalla) ---------- */
+
+.reflectHero { display: flex; flex-direction: column; overflow: hidden; padding: 32px max(6%, calc((100% - 1280px) / 2)) 24px; background: var(--lime); }
+
+.heroMain { flex: 1; min-height: 0; display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: stretch; }
+
+.heroText { align-self: center; }
+.heroText .sectionLabel { color: rgba(21,26,18,.7); }
+.heroText h1 { margin: 12px 0 20px; font-size: clamp(44px, min(6.5vw, 11vh), 88px); font-weight: 800; line-height: .95; letter-spacing: -4px; }
+.heroText p { max-width: 420px; margin-bottom: 28px; font-size: 13px; line-height: 1.9; font-weight: 500; }
+
+/* Collage de fotos */
+.heroPhotos { min-height: 0; padding: 8px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.heroPhotos .photo { aspect-ratio: auto; border: 6px solid var(--white); background: rgba(21,26,18,.14); transition: rotate var(--transition), transform var(--transition); }
+.heroPhotos .photo:nth-child(1) { grid-row: span 2; rotate: -2deg; }
+.heroPhotos .photo:nth-child(2) { rotate: 2deg; }
+.heroPhotos .photo:nth-child(3) { rotate: -1.5deg; }
+.heroPhotos .photo:hover { rotate: 0deg; transform: scale(1.03); z-index: 2; }
+
+/* ---------- ÍNDICE ---------- */
+
+.stepIndex { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 12px; padding: 16px 0 0; }
+.stepIndex a {
+  display: flex; align-items: center; gap: 10px; padding: 10px 16px;
+  background: var(--white); border: 1.5px solid var(--ink); border-radius: 3px;
+  font-size: 11px; font-weight: 600; transition: var(--transition);
+}
+.stepIndex a:nth-child(odd) { rotate: -1.5deg; }
+.stepIndex a:nth-child(even) { rotate: 1.5deg; }
+.stepIndex a span { padding: 3px 7px; border-radius: 3px; background: var(--lime); font-size: 10px; font-weight: 800; }
+.stepIndex a:hover { rotate: 0deg; background: var(--ink); color: var(--white); transform: translateY(-3px); }
+
+/* ---------- BLOQUES ---------- */
+
+.block { padding: 56px max(9%, calc((100% - 1200px) / 2)); }
+
+h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1; letter-spacing: -2.5px; }
+
+/* Foto: recuadro lime si todavía no hay imagen */
+.photo { position: relative; overflow: hidden; background: var(--lime); border-radius: var(--radius); aspect-ratio: 4 / 3; }
+.photo img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  filter: grayscale(100%); transition: filter .7s ease, transform .7s ease;
+}
+.photo:hover img { filter: grayscale(0); transform: scale(1.04); }
+
+/* ---------- HISTORIAS DE IMPACTO ---------- */
+
+.impact { display: grid; grid-template-columns: 1.5fr .7fr; gap: 56px; align-items: center; }
+#impacto-1 { background: var(--paper); }
+#impacto-2 { background: var(--white); }
+.impact.reverse { grid-template-columns: .7fr 1.5fr; }
+.impact.reverse .photos { order: -1; }
+
+.impactText h2 { margin: 8px 0 24px; }
+
+.facts { display: grid; border-top: 1.5px solid var(--ink); }
+.facts > div { padding: 14px 0; border-bottom: 1px solid var(--line); transition: padding-left var(--transition); }
+.facts > div:hover { padding-left: 10px; }
+.facts dt { margin-bottom: 4px; color: var(--lime-dark); font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.facts dd { color: var(--muted); font-size: 12.5px; line-height: 1.9; }
+.facts .highlight { margin-top: 12px; padding: 14px 16px; background: var(--lime); border-radius: var(--radius); border-bottom: 0; }
+.facts .highlight:hover { padding-left: 16px; }
+.facts .highlight dt { color: rgba(21,26,18,.65); }
+.facts .highlight dd { color: var(--ink); font-weight: 500; }
+
+/* Fotos tipo polaroid */
+.photos { display: grid; gap: 18px; padding: 6px; width: 100%; max-width: 300px; justify-self: center; }
+.photos figure { padding: 8px 8px 10px; background: var(--white); border: 1.5px solid var(--ink); border-radius: var(--radius); transition: rotate var(--transition), transform var(--transition); }
+#impacto-2 .photos figure { background: var(--paper); }
+.photos figure:nth-child(1) { rotate: -2deg; }
+.photos figure:nth-child(2) { rotate: 1.8deg; margin-left: 16px; }
+.photos figure:hover { rotate: 0deg; transform: scale(1.02); }
+.photos figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+
+/* ---------- REFLEXIÓN FINAL ---------- */
+
+.finalReflection { background: var(--ink); color: var(--white); }
+.finalReflection .sectionLabel { color: var(--lime); }
+.finalReflection p { max-width: 760px; margin: 20px 0 36px; color: var(--on-ink); font-size: clamp(15px, 1.8vw, 19px); line-height: 1.8; }
+.photoRow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.photoRow .photo { border: 6px solid var(--white); }
+.photoRow .photo:nth-child(1) { rotate: -2deg; }
+.photoRow .photo:nth-child(2) { rotate: 1.5deg; margin-top: 14px; }
+.photoRow .photo:nth-child(3) { rotate: -1deg; }
+
+/* ---------- RECAP Y AGRADECIMIENTO ---------- */
+
+.recap { background: var(--lime); }
+.recap .sectionLabel { color: rgba(21,26,18,.7); }
+
+.recapHead { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; flex-wrap: wrap; margin-bottom: 28px; }
+.recapHead h2 { font-size: clamp(52px, 9vw, 110px); letter-spacing: -5px; }
+.recapHead p { max-width: 360px; font-size: 13px; line-height: 1.9; font-weight: 500; }
+
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 1fr; gap: 14px; }
+.gallery .photo { aspect-ratio: 1; background: rgba(21,26,18,.14); border: 6px solid var(--white); transition: rotate var(--transition), transform var(--transition); }
+.gallery .photo:nth-child(2) { rotate: 2deg; }
+.gallery .photo:nth-child(3) { rotate: -1.5deg; }
+.gallery .photo:nth-child(4) { rotate: -2deg; }
+.gallery .photo:nth-child(5) { rotate: 1.5deg; }
+.gallery .photo:hover { rotate: 0deg; transform: scale(1.03); z-index: 2; }
+.gallery .big { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; rotate: -1deg; }
+
+.sticker {
+  position: absolute; right: 14px; bottom: 14px; z-index: 3;
+  padding: 10px 16px; border-radius: 3px; rotate: -5deg;
+  background: var(--ink); color: var(--lime);
+  font-size: 15px; font-weight: 800; letter-spacing: -.3px;
+}
+
+.recapActions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* ---------- PIE DE PÁGINA ---------- */
+
+.mainFooter { min-height: 85px; padding: 22px 8%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; background: var(--white); }
+.mainFooter p { color: var(--muted); font-size: 10px; letter-spacing: .4px; }
+.mainFooter > a:last-child { font-size: 10px; font-weight: 700; }
+.mainFooter > a:last-child:hover { color: var(--lime-dark); }
+
+/* ---------- APARICIÓN AL HACER SCROLL ---------- */
+
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease, rotate var(--transition); }
+.js .reveal.in { opacity: 1; transform: none; }
+.js .photos figure.reveal.in:hover, .js .gallery .photo.reveal.in:hover { transform: scale(1.02); }
+.photos figure:nth-child(2).reveal, .gallery .photo:nth-child(3).reveal { transition-delay: .12s; }
+.gallery .photo:nth-child(4).reveal { transition-delay: .2s; }
+.gallery .photo:nth-child(5).reveal { transition-delay: .28s; }
+
+/* ---------- TABLETS Y MÓVILES ---------- */
+
+@media (max-width: 900px) {
+  .mainHeader { padding: 0 4%; gap: 15px; }
+  .mainNav { gap: 18px; }
+  .impact { grid-template-columns: 1fr; gap: 28px; }
+  .impact.reverse { grid-template-columns: 1fr; }
+  .impact.reverse .photos { order: 0; }
+  .photos { grid-template-columns: repeat(2, 1fr); max-width: 460px; justify-self: start; }
+  .photos figure:nth-child(2) { margin-left: 0; }
+}
+
+@media (max-width: 860px) {
+  .mainHeader { height: auto; min-height: 95px; padding: 10px 5%; flex-wrap: wrap; gap: 8px; }
+  .mainHeader nav { order: 3; width: 100%; flex-basis: 100%; }
+  .mainNav { width: 100%; justify-content: space-between; gap: 8px; }
+  .mainNav a { font-size: 9px; }
+  .backHome { padding: 7px 10px; }
+
+  .reflectHero { padding: 40px 6% 28px; }
+  .heroMain { grid-template-columns: 1fr; gap: 28px; }
+  .heroText h1 { font-size: clamp(44px, 14vw, 64px); letter-spacing: -2px; }
+  .heroPhotos { grid-template-columns: repeat(3, 1fr); grid-template-rows: none; height: 150px; }
+  .heroPhotos .photo:nth-child(1) { grid-row: auto; }
+  .stepIndex { padding-top: 22px; gap: 8px; }
+
+  .block { padding: 40px 6%; }
+  h2 { letter-spacing: -1.5px; }
+  .photos { grid-template-columns: 1fr; max-width: 280px; justify-self: center; }
+  .photoRow { grid-template-columns: 1fr; gap: 16px; }
+  .photoRow .photo:nth-child(2) { margin-top: 0; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .gallery .big { grid-column: span 2; grid-row: auto; aspect-ratio: 4 / 3; }
+  .recapHead h2 { letter-spacing: -2px; }
+
+  .mainFooter { justify-content: center; text-align: center; padding: 22px 5%; }
+  .mainFooter p { order: 3; width: 100%; font-size: 9px; }
+}
+
+/* ---------- PORTADA: una pantalla en computadora ---------- */
+
+@media (min-width: 861px) {
+  .reflectHero {
+    height: calc(100vh - var(--header-h));
+    height: calc(100svh - var(--header-h));
+    min-height: 560px;
+  }
+}
+
+/* ---------- RECAP: cabe en una pantalla de computadora ---------- */
+
+@media (min-width: 861px) {
+  .recap {
+    display: flex; flex-direction: column;
+    height: calc(100vh - var(--header-h));
+    height: calc(100svh - var(--header-h));
+    min-height: 560px;
+    padding-top: 28px; padding-bottom: 28px;
+    scroll-margin-top: var(--header-h);
+  }
+
+  .recapHead { margin-bottom: 18px; }
+  .recapHead h2 { font-size: clamp(44px, 9vh, 96px); letter-spacing: -4px; }
+  .recapHead p { max-width: 340px; font-size: 12px; line-height: 1.7; }
+
+  .gallery { flex: 1; min-height: 0; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .gallery .photo { aspect-ratio: auto; }
+  .gallery .big { aspect-ratio: auto; }
+
+  .recapActions { margin-top: 18px; }
+}
+
+/* ---------- ACCESIBILIDAD ---------- */
+
+a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.finalReflection a:focus-visible { outline-color: var(--lime); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}
