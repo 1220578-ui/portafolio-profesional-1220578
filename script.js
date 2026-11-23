@@ -575,42 +575,42 @@ document.addEventListener("DOMContentLoaded", () => {
             titulo: "Fe y proposito",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: "images/integracion1.jpeg",
-            documento: "https://drive.google.com/file/d/1t1vi8V6j7gCY7gejg2Fe4yVqnTEKZIuT/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
+            documento: "https://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
         },
 
         a2: {
             titulo: "Desarrollo integral",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: [],
-            documento: ""
+            documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
         },
 
         b1: {
             titulo: "Gestión empresarial",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: [],
-            documento: ""
+            documento: "https://drive.google.com/drive/folders/1YMlfGXRRCAkIOwqMsDyY4SiOHBoS1TXH?usp=sharing"
         },
 
         b2: {
             titulo: "Negocios Internacinales",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: [],
-            documento: "https://drive.google.com/file/d/1Y2VBcQuLd04_rcjL5bY1n-BmL2bW7i4X/view?usp=sharing"
+            documento: "https://drive.google.com/file/d/1B7oA3hCzEZQvasTFQ_Miri7LrBLFgFde/view?usp=sharing"
         },
 
         c1: {
             titulo: "Investigación de mercados",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: [],
-            documento: ""
+            documento: "https://drive.google.com/drive/folders/1BGzgYqBVwwcUP37FwWYNnX8UETQwwlkw?usp=sharing"
         },
 
         c2: {
             titulo: "Pensamiento crítico",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: [],
-            documento: ""
+            documento: "https://drive.google.com/drive/folders/1OMrRjrpNggmaY368UEyCps4DdhcRWMNJ?usp=sharing"
         },
 
         d1: {
@@ -624,7 +624,7 @@ document.addEventListener("DOMContentLoaded", () => {
             titulo: "Trabajo colaborativo",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
             fotos: [],
-            documento: ""
+            documento: "https://drive.google.com/file/d/1vrRv68YGCBB6O_te2jI-p0vkZjqRPVj0/view?usp=sharing"
         }
 
     };
