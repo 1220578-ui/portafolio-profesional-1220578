@@ -142,7 +142,7 @@ img {
   overflow: hidden;
 
   background-color: var(--lime);
-  background-image: url("images/fondo.jpg");
+  background-image: url("fondo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
