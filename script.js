@@ -574,14 +574,14 @@ document.addEventListener("DOMContentLoaded", () => {
         a1: {
             titulo: "Fe y proposito",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: "images/integracion1.jpeg",
+            fotos: "cosmovision1.jpeg",
             documento: "https://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
         },
 
         a2: {
             titulo: "Desarrollo integral",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: [],
+            fotos: ["cosmovision2.jpeg"],
             documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
         },
 
@@ -616,7 +616,7 @@ document.addEventListener("DOMContentLoaded", () => {
         d1: {
             titulo: "Gestión de proyectos",
             descripcion: "Proyecto Integrador: Xëpi.",
-            fotos: ["images/integracion1.jpeg", "images/integracion2.jpeg", "images/integracion3.jpeg"],
+            fotos: ["integracion1.jpeg", "images/integracion2.jpeg", "images/integracion3.jpeg"],
             documento: "https://drive.google.com/file/d/1t1vi8V6j7gCY7gejg2Fe4yVqnTEKZIuT/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
         },
 
