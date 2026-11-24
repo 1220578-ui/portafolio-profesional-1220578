@@ -248,46 +248,47 @@ button {
 /* =========================================
    5. PORTADA DE COMPETENCIAS
 ========================================= */
-/* =====================================================
-   PORTADA — COMPETENCIAS
-   Fondo negro. Texto alineado a la derecha, equilibrado
-   con una letra gigante a la izquierda que cambia
-   A → B → C → D (las 4 competencias).
-   Las clases llevan el prefijo "sc-" para no chocar con
-   lo que ya existe en competencias.css.
-===================================================== */
+  /* =========================================
+   5. PORTADA DE COMPETENCIAS
+   Editorial · negro + verde lima · tipografía gruesa
+   Izquierda: letra A→B→C→D  |  Derecha: título
+   Abajo: índice de las 4 competencias (se ilumina en sincronía)
+   Clases con prefijo "sc-" para no chocar con el resto del CSS.
+========================================= */
 
 .skillsCover {
     --lime:   #d8ff68;
     --ink:    #050505;
-    --white:  #FFFFFF;
+    --white:  #ffffff;
     --on-ink: rgba(255, 255, 255, .78);
+    --hair:   rgba(255, 255, 255, .14);
     --radius: 5px;
     --glow:   rgba(216, 255, 104, .45);
-    --cycle:  16s;   /* 4 letras x 4s */
+    --cycle:  16s;                 /* 4 letras x 4s */
+    --gutter: clamp(28px, 4vw, 56px);
 
     position: relative;
     width: 100%;
-    height: calc(100svh - var(--header-h, 76px));
-    min-height: 560px;
+    min-height: min(calc(100svh - var(--header-h, 76px)), 700px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 40px;
-    padding: 0 8%;
+    grid-template-rows: 1fr auto;
+    padding: clamp(40px, 7vh, 72px) 8% 0;
     overflow: hidden;
     background: #000;
     font-family: 'Poppins', sans-serif;
 }
 
 /* =========================================
-   IZQUIERDA: letra gigante que cambia
+   IZQUIERDA · letra que cambia
    ========================================= */
 
 .sc-showcase {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
     display: grid;
-    justify-items: start;
-    align-items: center;
+    padding-right: var(--gutter);
 }
 
 .sc-item {
@@ -295,7 +296,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 16px;
     opacity: 0;
     animation: scCycle var(--cycle) ease infinite;
 }
@@ -306,46 +307,50 @@ button {
 .sc-item:nth-child(4) { animation-delay: 12.5s; }
 
 .sc-big {
-    font-size: clamp(6rem, 15vw, 12rem);
+    margin-left: -.05em;            /* compensa el margen interno de la letra */
+    font-size: clamp(7rem, 17vw, 14rem);
     font-weight: 800;
-    line-height: .8;
+    line-height: .78;
     letter-spacing: -.06em;
     color: var(--lime);
-    text-shadow: 0 0 8px rgba(216, 255, 104, .65),
-                 0 0 40px rgba(216, 255, 104, .25);
+    text-shadow: 0 0 8px rgba(216, 255, 104, .6),
+                 0 0 40px rgba(216, 255, 104, .22);
 }
 
 .sc-name {
-    padding-left: .4rem;
-    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    font-size: clamp(1.05rem, 1.9vw, 1.6rem);
     font-weight: 600;
     letter-spacing: -.01em;
     color: var(--white);
 }
 
 @keyframes scCycle {
-    0%   { opacity: 0; transform: translateY(28px); }
+    0%   { opacity: 0; transform: translateY(26px); }
     4%   { opacity: 1; transform: translateY(0); }
     22%  { opacity: 1; transform: translateY(0); }
-    27%  { opacity: 0; transform: translateY(-28px); }
-    100% { opacity: 0; transform: translateY(-28px); }
+    27%  { opacity: 0; transform: translateY(-26px); }
+    100% { opacity: 0; transform: translateY(-26px); }
 }
 
 /* =========================================
-   DERECHA: texto alineado a la derecha
+   DERECHA · título alineado a la derecha
    ========================================= */
 
 .sc-content {
-    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+    padding: 8px 0 8px var(--gutter);
+    border-left: 1px solid var(--hair);
     color: var(--white);
 }
 
 .sc-label {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     color: var(--lime);
     font-size: .78rem;
     font-weight: 800;
@@ -370,14 +375,12 @@ button {
     flex-direction: column;
     align-items: flex-end;
     margin: 0;
-    font-size: clamp(3.4rem, 9vw, 8rem);
+    font-size: clamp(3rem, 7.2vw, 6.2rem);
     font-weight: 800;
     line-height: .95;
 }
 
-.sc-line {
-    display: block;
-}
+.sc-line { display: block; }
 
 .sc-line-big {
     font-weight: 800;
@@ -399,16 +402,61 @@ button {
 }
 
 .sc-career {
-    max-width: 360px;
-    margin-top: 26px;
+    max-width: 340px;
+    margin-top: 22px;
     font-weight: 400;
-    font-size: clamp(.78rem, 1.2vw, .95rem);
+    font-size: clamp(.78rem, 1.15vw, .92rem);
     line-height: 1.7;
     letter-spacing: .04em;
     color: var(--on-ink);
 }
 
-/* ---------- Animación de entrada del texto ---------- */
+/* =========================================
+   ÍNDICE INFERIOR · A B C D
+   ========================================= */
+
+.sc-index {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: clamp(32px, 6vh, 56px);
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--hair);
+}
+
+.sc-index li {
+    padding: 20px 0 24px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--white);
+    opacity: .38;
+    animation: scActive var(--cycle) ease infinite;
+}
+
+.sc-index li span {
+    margin-right: 8px;
+    font-weight: 800;
+    color: var(--lime);
+}
+
+.sc-index li:nth-child(1) { animation-delay: .5s; }
+.sc-index li:nth-child(2) { animation-delay: 4.5s; }
+.sc-index li:nth-child(3) { animation-delay: 8.5s; }
+.sc-index li:nth-child(4) { animation-delay: 12.5s; }
+
+@keyframes scActive {
+    0%   { opacity: .38; }
+    4%   { opacity: 1; }
+    24%  { opacity: 1; }
+    28%  { opacity: .38; }
+    100% { opacity: .38; }
+}
+
+/* =========================================
+   ANIMACIÓN DE ENTRADA
+   ========================================= */
 
 .sc-label,
 .sc-line,
@@ -441,39 +489,82 @@ button {
 }
 
 /* =========================================
-   TABLETS Y CELULARES
+   TABLETS
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .sc-index li { font-size: .72rem; }
+}
+
+/* =========================================
+   CELULARES
    ========================================= */
 
 @media (max-width: 800px) {
 
     .skillsCover {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        height: auto;
-        min-height: calc(100svh - 95px);
-        gap: 24px;
-        padding: 50px 6%;
-        align-content: center;
+        grid-template-rows: auto auto auto;
+        min-height: 0;
+        padding: 40px 6% 0;
     }
 
-    .sc-showcase { min-height: 150px; }
+    /* Letra y nombre en una sola fila, compactos */
+    .sc-showcase {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0 0 26px;
+        min-height: 96px;
+        border-bottom: 1px solid var(--hair);
+    }
 
-    .sc-big  { font-size: 6rem; }
-    .sc-name { font-size: 1rem; }
+    .sc-item {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 16px;
+    }
 
-    .sc-label  { font-size: .7rem; }
-    .sc-title  { font-size: clamp(3rem, 15vw, 4.5rem); }
+    .sc-big  { font-size: 5.8rem; }
+    .sc-name { padding-bottom: 6px; font-size: 1.05rem; }
+
+    .sc-content {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 28px 0 0;
+        border-left: 0;
+    }
+
+    .sc-label { font-size: .7rem; }
+    .sc-title { font-size: clamp(3rem, 15vw, 4.4rem); }
+    .sc-career { max-width: 280px; margin-top: 18px; }
+
+    .sc-index {
+        grid-row: 3;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        margin-top: 32px;
+    }
+
+    .sc-index li {
+        padding: 14px 0 10px;
+        font-size: .74rem;
+    }
+
+    .sc-index li:nth-child(n + 3) { padding-top: 4px; padding-bottom: 20px; }
 }
 
 /* =========================================
-   ACCESIBILIDAD
+   ACCESIBILIDAD · sin movimiento
    ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
-    /* Sin movimiento: se muestra solo la primera letra */
-    .sc-item { animation: none; }
-    .sc-item:nth-child(1) { opacity: 1; }
+    .sc-item,
+    .sc-index li { animation: none; }
+
+    .sc-item:nth-child(1),
+    .sc-index li:nth-child(1) { opacity: 1; }
 
     .sc-label,
     .sc-line,
@@ -482,7 +573,7 @@ button {
         transform: none;
         animation: none;
     }
-}  
+}
 
 /* =========================================
    6. CARPETA DE COMPETENCIAS
