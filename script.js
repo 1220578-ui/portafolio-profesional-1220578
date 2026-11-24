@@ -92,37 +92,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const EXPERIENCIAS = {
 
-        xepi: {
+xepi: {
 
-            puesto: "Escribe aquí tu puesto",
+    puesto: "Líder de equipo | Gerente general",
 
-            herramientas: [
-                "Herramienta 1",
-                "Herramienta 2"
-            ],
+    herramientas: [
+        "HTML, CSS y JavaScript para el desarrollo de la página web",
+        "Excel y herramientas de gestión de proyectos",
+        "Investigación de mercados y análisis del consumidor",
+        "Planeación estratégica y desarrollo de modelos de negocio",
+        "Liderazgo, coordinación de equipos y toma de decisiones"
+    ],
 
-            programas: [
-                "Programa 1",
-                "Programa 2"
-            ],
+    programas: [
+        "Desarrollo de XËPI, emprendimiento de skincare con una propuesta basada en las necesidades de la piel y las condiciones climáticas",
+        "Investigación de mercado y análisis del consumidor para definir la propuesta de valor y el portafolio de productos",
+        "Diseño y desarrollo de la página web del emprendimiento utilizando HTML, CSS y JavaScript"
+    ],
 
-            habituales: [
-                "Dirección y coordinación del equipo de trabajo",
-                "Gestión de actividades",
-                "Desarrollo estratégico del modelo de negocio, desde la investigación de mercado hasta la planeación financiera"
-            ],
+    habituales: [
+        "Dirección y coordinación del equipo de trabajo",
+        "Gestión de actividades, asignación de responsabilidades y seguimiento de avances",
+        "Desarrollo estratégico del modelo de negocio, desde la investigación de mercado hasta la planeación financiera",
+        "Coordinación de las distintas áreas del proyecto y seguimiento al cumplimiento de objetivos",
+        "Participación en la toma de decisiones y resolución de situaciones durante el desarrollo del emprendimiento"
+    ],
 
-            extraordinarias: [
-                "Escribe aquí una función extraordinaria"
-            ],
+    extraordinarias: [
+        "Diseño y desarrollo de la página web del emprendimiento mediante HTML, CSS y JavaScript, integrando la identidad visual de la marca y elementos interactivos"
+    ],
 
-            fotos: [
-                "trayectoria-xepi-1.jpeg",
-                "trayectoria-xepi-2.jpeg",
-                "trayectoria-xepi-3.jpeg"
-            ]
-
-        },
+    fotos: [
+        "xepi1.jpeg",
+        "xepi2.jpeg",
+        "xepi3.jpeg"
+    ]
+},
 
 
         adventus: {
