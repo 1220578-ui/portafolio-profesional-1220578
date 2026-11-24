@@ -197,6 +197,117 @@ h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1; lett
 .photos figure:hover { rotate: 0deg; transform: scale(1.02); }
 .photos figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.6; }
 
+/* ---------- PLAN DE ACCIÓN / SIGUIENTES PASOS ---------- */
+
+.developmentPlan {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background: var(--white);
+}
+
+.planHead {
+    display: grid;
+    grid-template-columns: 1fr .65fr;
+    align-items: end;
+    gap: 40px;
+}
+
+.planHead h2 {
+    margin-top: 8px;
+}
+
+.planHead p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.9;
+}
+
+.planTableWrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.planTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.planTable th {
+    padding: 17px 20px;
+    background: var(--ink);
+    color: var(--lime);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.planTable td {
+    padding: 20px;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.8;
+    vertical-align: top;
+}
+
+.planTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.planTable td:first-child {
+    width: 25%;
+    color: var(--ink);
+}
+
+.planTable td:nth-child(2) {
+    width: 55%;
+}
+
+.planTable td:last-child {
+    width: 20%;
+    font-size: 10.5px;
+}
+
+.planTable td strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.planTable tbody tr {
+    transition: background .25s ease;
+}
+
+.planTable tbody tr:hover {
+    background: var(--paper);
+}
+
+/* Adaptación a móviles */
+@media (max-width: 860px) {
+    .planHead {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .developmentPlan {
+        gap: 24px;
+    }
+
+    .planTable {
+        min-width: 650px;
+    }
+
+    .planTable th,
+    .planTable td {
+        padding: 15px;
+    }
+}
+
 /* ---------- REFLEXIÓN FINAL ---------- */
 
 .finalReflection { background: var(--ink); color: var(--white); }
