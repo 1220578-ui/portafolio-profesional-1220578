@@ -117,9 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
 
             fotos: [
-                "../assets/images/trayectoria-xepi-1.jpeg",
-                "../assets/images/trayectoria-xepi-2.jpeg",
-                "../assets/images/trayectoria-xepi-3.jpeg"
+                "trayectoria-xepi-1.jpeg",
+                "trayectoria-xepi-2.jpeg",
+                "trayectoria-xepi-3.jpeg"
             ]
 
         },
@@ -150,9 +150,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
 
             fotos: [
-                "../assets/images/trayectoria-adventus-1.jpeg",
-                "../assets/images/trayectoria-adventus-2.jpeg",
-                "../assets/images/trayectoria-adventus-3.jpeg"
+                "trayectoria-adventus-1.jpeg",
+                "trayectoria-adventus-2.jpeg",
+                "trayectoria-adventus-3.jpeg"
             ]
 
         },
@@ -182,9 +182,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
 
             fotos: [
-                "../assets/images/trayectoria-enactus-1.jpeg",
-                "../assets/images/trayectoria-enactus-2.jpeg",
-                "../assets/images/trayectoria-enactus-3.jpeg"
+                "trayectoria-enactus-1.jpeg",
+                "trayectoria-enactus-2.jpeg",
+                "trayectoria-enactus-3.jpeg"
             ]
 
         },
@@ -583,8 +583,10 @@ a1: {
 },
         a2: {
             titulo: "Desarrollo integral",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: ["cosmovision2.png"],
+            descripcion: "He fortalecido esta competencia al reconocer que Dios puede dirigir mis decisiones y propósitos a través de personas y oportunidades externas a la iglesia. Quienes no comparten nuestras creencias no deben ser considerados ajenos a nuestra misión, pues también pueden convertirse en aliados estratégicos para impulsar proyectos y contribuir a su desarrollo.",
+            fotos: ["cosmovision2.png",
+                    "cosmovision21.png"
+            ],
             documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
         },
 
