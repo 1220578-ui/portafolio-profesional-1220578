@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
 
             fotos: [
-                "jybsa1.jpeg",
+                "jybsa1.jpg",
                 "jybsa2.jpeg",
                 "jybsa3.jpeg"
             ]
