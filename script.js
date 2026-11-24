@@ -643,9 +643,9 @@ a1: {
         d2: {
             titulo: "Servicio comunitario UPS",
             descripcion: "Aunque teníamos un plan basado en el programa Salud en Casa, enfocado en la salud física, la situación de la familia, que atravesaba un duelo, nos llevó a replantear la actividad. Aprendí que gestionar un proyecto también implica reconocer cuándo las actividades planeadas no responden a las necesidades de las personas y ajustar lo previsto para aprovechar mejor el tiempo y atender su situación.",
-            fotos: ["integracion23.jpg",
-                "integracion21.jpg",
-                "integracion22.jpg"],
+            fotos: ["integracion23.jpeg",
+                "integracion21.jpeg",
+                "integracion22.jpeg"],
             documento: "https://drive.google.com/file/d/1vrRv68YGCBB6O_te2jI-p0vkZjqRPVj0/view?usp=sharing"
         }
 
