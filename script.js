@@ -583,7 +583,8 @@ a1: {
 },
         a2: {
             titulo: "Desarrollo integral",
-descripcion: "Comprendí que el propósito de mi liderazgo no está en los cargos que alcance o en la posición que ocupe, sino en la huella que dejo en las personas con las que convivo. Esta reflexión me llevó a reconocer la importancia de escuchar, comprender y acompañar a quienes enfrentan dificultades, procurando que mi manera de relacionarme con los demás refleje el ejemplo de Jesús."            fotos: ["cosmovision2.jpeg",
+descripcion: "Comprendí que el propósito de mi liderazgo no está en los cargos que alcance o en la posición que ocupe, sino en la huella que dejo en las personas con las que convivo. Esta reflexión me llevó a reconocer la importancia de escuchar, comprender y acompañar a quienes enfrentan dificultades, procurando que mi manera de relacionarme con los demás refleje el ejemplo de Jesús.",
+         fotos: ["cosmovision2.jpeg",
                     "cosmovision21.jpeg"
             ],
             documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
@@ -591,7 +592,8 @@ descripcion: "Comprendí que el propósito de mi liderazgo no está en los cargo
 
         b1: {
             titulo: "Fintech ante la ia",
-descripcion: "Investigué el mercado FINTECH en México, China, Estados Unidos y Reino Unido, recopilando y comparando sus respectivos marcos regulatorios. Revisé las disposiciones legales aplicables al sector e identifiqué diferencias en los requisitos de operación, supervisión y prestación de servicios financieros. El análisis me permitió comprender cómo la regulación influye en las oportunidades de expansión y las condiciones de competencia de las empresas FINTECH."            fotos: ["conocimiento11.png",
+descripcion: "Investigué el mercado FINTECH en México, China, Estados Unidos y Reino Unido, recopilando y comparando sus respectivos marcos regulatorios. Revisé las disposiciones legales aplicables al sector e identifiqué diferencias en los requisitos de operación, supervisión y prestación de servicios financieros. El análisis me permitió comprender cómo la regulación influye en las oportunidades de expansión y las condiciones de competencia de las empresas FINTECH.",
+fotos: ["conocimiento11.png",
                 "conocimiento12.png",
                 "conocimiento13.png"
             ],
@@ -600,7 +602,8 @@ descripcion: "Investigué el mercado FINTECH en México, China, Estados Unidos y
 
         b2: {
             titulo: "Indicadores Unión Europea",
-descripcion: "Recopilamos y analizamos los principales indicadores económicos de la Unión Europea, identificando tendencias y diferencias entre sus países. Desarrollamos un dashboard interactivo en R para consultar, comparar y visualizar información de los 27 países durante el periodo 2010-2023. El trabajo implicó organizar las bases de datos, seleccionar indicadores, construir visualizaciones e interpretar los resultados para identificar cambios y comportamientos económicos a lo largo del tiempo."            fotos: ["conocimiento21.png",
+descripcion: "Recopilamos y analizamos los principales indicadores económicos de la Unión Europea, identificando tendencias y diferencias entre sus países. Desarrollamos un dashboard interactivo en R para consultar, comparar y visualizar información de los 27 países durante el periodo 2010-2023. El trabajo implicó organizar las bases de datos, seleccionar indicadores, construir visualizaciones e interpretar los resultados para identificar cambios y comportamientos económicos a lo largo del tiempo.",
+fotos: ["conocimiento21.png",
                 "conocimiento22.png",
                 "conocimiento23.png",
                 "conocimiento24.png"
@@ -610,7 +613,8 @@ descripcion: "Recopilamos y analizamos los principales indicadores económicos d
 
         c1: {
             titulo: "Jaztea en el mercado tunecino",
-descripcion: "Analizamos las condiciones del mercado tunecino para determinar la viabilidad de introducir JAZTEA en el país. Investigamos los hábitos de consumo, las preferencias locales, la competencia y las barreras de entrada, identificando las diferencias respecto al mercado de origen. Con base en estos hallazgos, evaluamos los ajustes necesarios en la propuesta comercial y las alternativas para facilitar su ingreso al mercado."            fotos: [ "investigacion12.png",
+descripcion: "Analizamos las condiciones del mercado tunecino para determinar la viabilidad de introducir JAZTEA en el país. Investigamos los hábitos de consumo, las preferencias locales, la competencia y las barreras de entrada, identificando las diferencias respecto al mercado de origen. Con base en estos hallazgos, evaluamos los ajustes necesarios en la propuesta comercial y las alternativas para facilitar su ingreso al mercado.",            
+fotos: [ "investigacion12.png",
                 "investigacion13.png",
                 "investigacion11.png"
             ],
@@ -619,7 +623,8 @@ descripcion: "Analizamos las condiciones del mercado tunecino para determinar la
 
         c2: {
             titulo: "Pensamiento crítico",
-descripcion: "Participé en el análisis estadístico de una investigación sobre resiliencia y desempeño laboral en PyMEs. El trabajo incluyó la revisión y preparación de datos, aplicación de pruebas estadísticas, análisis de relaciones entre variables y segmentación mediante clústeres. A partir de los resultados, identificamos patrones y agrupaciones que facilitaron la interpretación de los datos y la elaboración de conclusiones."            fotos: ["investigacion21.png",
+descripcion: "Participé en el análisis estadístico de una investigación sobre resiliencia y desempeño laboral en PyMEs. El trabajo incluyó la revisión y preparación de datos, aplicación de pruebas estadísticas, análisis de relaciones entre variables y segmentación mediante clústeres. A partir de los resultados, identificamos patrones y agrupaciones que facilitaron la interpretación de los datos y la elaboración de conclusiones.",
+             fotos: ["investigacion21.png",
                 "investigacion22.png",
                 "investigacion23.png"
             ],
