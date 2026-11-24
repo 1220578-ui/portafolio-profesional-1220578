@@ -245,37 +245,38 @@ jybsa: {
 },
 
 
-      
+
 club: {
 
     puesto: "Subdirectora (2025) | Directora (2026)",
 
     herramientas: [
-        "Planeación estratégica y programación",
-        "Coordinación y seguimiento de planes de trabajo",
-        "Excel para el control y seguimiento de información",
-        "Elaboración de informes y documentación administrativa"
+        "Planeación estratégica y coordinación institucional",
+        "Excel y Google Sheets para el control de información",
+        "Google Apps Script para automatización de procesos administrativos",
+        "Generación automatizada de informes en Google Docs",
+        "Organización y gestión documental"
     ],
 
     programas: [
         "Planeación anual del Club Aventureros Shaddai en coordinación con su directiva",
         "Participación en la planeación institucional de la iglesia mediante su junta directiva",
-        "Desarrollo de programas formativos y actividades para niños",
+        "Desarrollo de programas formativos y actividades para niños y jóvenes",
         "Organización de iniciativas de servicio comunitario"
     ],
 
     habituales: [
         "Participación en reuniones de directiva para establecer objetivos, programas y calendarios de trabajo",
-        "Planeación y coordinación de actividades conforme a los acuerdos de la directiva",
-        "Participación en la junta directiva de la iglesia para planificar iniciativas y coordinar esfuerzos entre ministerios",
+        "Planeación y coordinación de actividades conforme a los acuerdos establecidos",
+        "Participación en la junta directiva de la iglesia para planificar iniciativas entre ministerios",
         "Distribución de responsabilidades y seguimiento de los planes acordados",
-        "Supervisión del desarrollo de programas y evaluación de actividades",
-        "Elaboración de informes, expedientes y documentación administrativa",
-        "Gestión de permisos y autorizaciones con padres de familia"
+        "Supervisión de programas y evaluación de actividades",
+        "Gestión de permisos, autorizaciones y expedientes de participantes",
+        "Comunicación y seguimiento con padres de familia y consejeros"
     ],
 
     extraordinarias: [
-        "Participación en espacios de planeación y toma de decisiones a nivel de club e iglesia, colaborando con distintas directivas en la definición y coordinación de programas e iniciativas. En 2026 asumí la dirección del club después de desempeñarme como subdirectora durante 2025."
+        "Desarrollo de un sistema automatizado de generación de informes mediante Google Apps Script, integrando información de hojas de cálculo con plantillas de Google Docs para agilizar la elaboración de reportes administrativos."
     ],
 
     fotos: [
@@ -285,6 +286,7 @@ club: {
     ]
 
 },
+
 
     };
 
