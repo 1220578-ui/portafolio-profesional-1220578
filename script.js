@@ -169,6 +169,7 @@ adventus: {
 
 },
 
+
 enactus: {
 
     puesto: "Vicepresidenta de Marketing | Enactus Hub UM (Oct 2025-Ago 2026)",
@@ -176,26 +177,28 @@ enactus: {
     herramientas: [
         "Comunicación organizacional y seguimiento individual",
         "Articulación de equipos y coordinación de iniciativas",
-        "Estrategias de recuperación de confianza institucional",
-        "Organización mediante comisiones y programas"
+        "Planeación y seguimiento de programas",
+        "Organización de actividades mediante comisiones y equipos de trabajo",
+        "Gestión de recursos y adaptación ante cambios organizacionales"
     ],
 
     programas: [
-        "Recuperación organizacional del Hub tras una crisis heredada de la administración anterior",
-        "Mantenimiento de más de 45 integrantes activos con un equipo central de dos personas y apoyo distribuido en comisiones y programas",
-        "Implementación de estrategias de acercamiento, integración y participación de los miembros"
+        "Recuperación de la continuidad operativa del Hub junto con la nueva presidencia",
+        "Integración y mantenimiento de una comunidad de más de 45 integrantes, mayoritariamente nuevos",
+        "Organización de actividades y distribución de responsabilidades con una estructura operativa reducida"
     ],
 
     habituales: [
         "Comunicación individual 1:1 para mantener informados y vinculados a los integrantes",
         "Seguimiento de la participación y atención de inquietudes",
-        "Identificación de habilidades para vincular miembros con actividades y comisiones",
+        "Identificación de habilidades e intereses para vincular miembros con actividades y comisiones",
         "Coordinación de iniciativas de comunicación interna",
-        "Colaboración con presidencia en la organización y seguimiento del Hub"
+        "Adaptación de programas heredados de la administración anterior",
+        "Colaboración con la nueva presidencia en la organización y continuidad operativa del Hub"
     ],
 
     extraordinarias: [
-        "Participación en el rescate organizacional del Hub después de una crisis institucional, articulando un equipo central de dos personas con integrantes que colaboraban mediante comisiones y programas. Las estrategias de acercamiento y recuperación de confianza permitieron mantener una comunidad de más de 45 miembros activos."
+        "Junto con la nueva presidencia, asumimos la continuidad del Hub durante una etapa de crisis organizacional. La mayoría de los integrantes eran nuevos, por lo que contábamos con poco soporte operativo y era necesario acompañarlos en su integración y participación. Gestionamos los programas heredados, identificando aquellos que demandaban demasiado tiempo y recursos, y reorganizamos los esfuerzos según las capacidades y prioridades del equipo. Mediante el seguimiento individual, la comunicación y la distribución de actividades por comisiones, conseguimos mantener activa una comunidad de más de 45 integrantes, con un equipo central de dos personas y apoyo ocasional de colaboradores."
     ],
 
     fotos: [
