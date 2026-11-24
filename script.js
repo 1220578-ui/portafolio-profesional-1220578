@@ -602,7 +602,7 @@ a1: {
         },
 
         b2: {
-            titulo: "Negocios Internacinales",
+            titulo: "Negocios Internacionales",
             descripcion: "Durante el trabajo identificamos factores externos que afectan su desempeño, como la dependencia energética, el bajo crecimiento económico y los cambios en su estructura poblacional. Esta experiencia me permitió fortalecer mi capacidad para relacionar acontecimientos geopolíticos con sus consecuencias económicas, contrastar información y fundamentar conclusiones a partir de datos e indicadores.",
             fotos: ["conocimiento2.png",
                 "conocimiento21.png",
