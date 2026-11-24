@@ -592,15 +592,23 @@ a1: {
 
         b1: {
             titulo: "Gestión empresarial",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: [],
+            descripcion: "Considero que he desarrollado esta competencia al aplicar, junto con mi equipo, los conocimientos adquiridos durante mi formación para estructurar un proyecto empresarial desde su concepción hasta su evaluación. A través de Xëpi trabajamos en la definición del modelo de negocio, el análisis de mercado, la identidad corporativa, la estructura organizacional, los procesos de producción, las estrategias comerciales y la planeación financiera.",
+            fotos: ["conocimiento1.jpeg",
+                "conocimiento11.jpeg",
+                "conocimiento12.jpeg",
+                "conocimiento13.jpeg"
+            ],
             documento: "https://drive.google.com/drive/folders/1YMlfGXRRCAkIOwqMsDyY4SiOHBoS1TXH?usp=sharing"
         },
 
         b2: {
             titulo: "Negocios Internacinales",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: [],
+            descripcion: "Durante el trabajo identificamos factores externos que afectan su desempeño, como la dependencia energética, el bajo crecimiento económico y los cambios en su estructura poblacional. Esta experiencia me permitió fortalecer mi capacidad para relacionar acontecimientos geopolíticos con sus consecuencias económicas, contrastar información y fundamentar conclusiones a partir de datos e indicadores.",
+            fotos: ["conocimiento2.png",
+                "conocimiento21.png",
+                "conocimiento22.png",
+                "conocimiento23.png"
+            ],
             documento: "https://drive.google.com/file/d/1B7oA3hCzEZQvasTFQ_Miri7LrBLFgFde/view?usp=sharing"
         },
 
