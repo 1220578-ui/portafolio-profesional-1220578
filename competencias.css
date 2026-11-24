@@ -251,7 +251,7 @@ button {
   /* =========================================
    5. PORTADA DE COMPETENCIAS
    Editorial · negro + verde lima · tipografía gruesa
-   Izquierda: letra A→B→C→D  |  Derecha: título
+   Izquierda: letra A→B→C→D  |  Derecha: título (cada uno centrado en su columna)
    Abajo: índice de las 4 competencias (se ilumina en sincronía)
    Clases con prefijo "sc-" para no chocar con el resto del CSS.
 ========================================= */
@@ -273,6 +273,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
+    column-gap: var(--gutter);
     padding: clamp(40px, 7vh, 72px) 8% 0;
     overflow: hidden;
     background: #000;
@@ -288,14 +289,15 @@ button {
     grid-row: 1;
     align-self: center;
     display: grid;
-    padding-right: var(--gutter);
+    justify-items: center;
 }
 
 .sc-item {
     grid-area: 1 / 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 16px;
     opacity: 0;
     animation: scCycle var(--cycle) ease infinite;
@@ -307,7 +309,7 @@ button {
 .sc-item:nth-child(4) { animation-delay: 12.5s; }
 
 .sc-big {
-    margin-left: -.05em;            /* compensa el margen interno de la letra */
+    margin-right: .06em;            /* compensa el espaciado negativo para centrar bien */
     font-size: clamp(7rem, 17vw, 14rem);
     font-weight: 800;
     line-height: .78;
@@ -342,10 +344,9 @@ button {
     align-self: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    padding: 8px 0 8px var(--gutter);
-    border-left: 1px solid var(--hair);
+    align-items: center;
+    text-align: center;
+    padding: 8px 0;
     color: var(--white);
 }
 
@@ -373,7 +374,7 @@ button {
 .sc-title {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     margin: 0;
     font-size: clamp(3rem, 7.2vw, 6.2rem);
     font-weight: 800;
@@ -398,7 +399,7 @@ button {
     background: var(--lime);
     border-radius: var(--radius);
     box-shadow: 0 0 22px var(--glow);
-    rotate: 1.5deg;
+    rotate: -1.5deg;
 }
 
 .sc-career {
@@ -514,13 +515,13 @@ button {
     .sc-showcase {
         grid-column: 1;
         grid-row: 1;
-        padding: 0 0 26px;
+        padding: 0 0 8px;
         min-height: 96px;
-        border-bottom: 1px solid var(--hair);
     }
 
     .sc-item {
         flex-direction: row;
+        justify-content: center;
         align-items: flex-end;
         gap: 16px;
     }
@@ -531,8 +532,7 @@ button {
     .sc-content {
         grid-column: 1;
         grid-row: 2;
-        padding: 28px 0 0;
-        border-left: 0;
+        padding: 20px 0 0;
     }
 
     .sc-label { font-size: .7rem; }
