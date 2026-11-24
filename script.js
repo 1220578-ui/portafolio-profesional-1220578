@@ -573,17 +573,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 a1: {
     titulo: "Fe y propósito",
-    descripcion: "Escribe aquí la descripción de esta evidencia.",
+    descripcion: "He fortalecido esta competencia al reconocer que Dios puede dirigir mis decisiones y propósitos a través de personas y oportunidades externas a la iglesia. Quienes no comparten nuestras creencias no deben ser considerados ajenos a nuestra misión, pues también pueden convertirse en aliados estratégicos para impulsar proyectos y contribuir a su desarrollo.",
     fotos: [
         "cosmovision1.png",
         "cosmovision11.png",
-        "cosmovision13.png"
+        "cosmovision12.png"
     ],
     documento: "https://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
 },
         a2: {
             titulo: "Desarrollo integral",
-            descripcion: "He fortalecido esta competencia al reconocer que Dios puede dirigir mis decisiones y propósitos a través de personas y oportunidades externas a la iglesia. Quienes no comparten nuestras creencias no deben ser considerados ajenos a nuestra misión, pues también pueden convertirse en aliados estratégicos para impulsar proyectos y contribuir a su desarrollo.",
+            descripcion: "También comprendí que mi propósito no está únicamente relacionado con alcanzar responsabilidades o dirigir equipos, sino con la manera en que trato a las personas que me rodean. Reconocer que otros también enfrentan dificultades me ha llevado a procurar ser una líder que escucha, orienta y acompaña, reflejando en sus acciones el ejemplo de Jesús.",
             fotos: ["cosmovision2.jpeg",
                     "cosmovision21.jpeg"
             ],
