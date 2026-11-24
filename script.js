@@ -571,17 +571,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const EVIDENCIAS = {
 
-        a1: {
-            titulo: "Fe y proposito",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: "cosmovision1.jpeg",
-            documento: "https://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
-        },
-
+a1: {
+    titulo: "Fe y propósito",
+    descripcion: "Escribe aquí la descripción de esta evidencia.",
+    fotos: [
+        "cosmovision11.png",
+        "cosmovision12.png",
+        "cosmovision13.png"
+    ],
+    documento: "https://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
+},
         a2: {
             titulo: "Desarrollo integral",
             descripcion: "Escribe aquí la descripción de esta evidencia.",
-            fotos: ["cosmovision2.jpeg"],
+            fotos: ["cosmovision2.png"],
             documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
         },
 
