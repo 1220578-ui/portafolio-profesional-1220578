@@ -148,7 +148,14 @@ h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1; lett
 
 .finalReflection { background: var(--ink); color: var(--white); }
 .finalReflection .sectionLabel { color: var(--lime); }
-.finalReflection p { max-width: 760px; margin: 20px 0 36px; color: var(--on-ink); font-size: clamp(15px, 1.8vw, 19px); line-height: 1.8; }
+.finalReflection p {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 36px;
+    color: var(--on-ink);
+    font-size: clamp(14px, 1.8vw, 14px);
+    line-height: 1.8;
+}
 .photoRow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .photoRow .photo { border: 6px solid var(--white); }
 .photoRow .photo:nth-child(1) { rotate: -2deg; }
