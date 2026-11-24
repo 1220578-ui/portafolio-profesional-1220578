@@ -71,14 +71,38 @@ img { max-width: 100%; display: block; }
 
 /* ---------- PORTADA (cabe en una pantalla) ---------- */
 
-.reflectHero { display: flex; flex-direction: column; overflow: hidden; padding: 32px max(6%, calc((100% - 1280px) / 2)) 24px; background: var(--lime); }
-
-.heroMain { flex: 1; min-height: 0; display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: stretch; }
-
-.heroText { align-self: center; }
-.heroText .sectionLabel { color: rgba(21,26,18,.7); }
-.heroText h1 { margin: 12px 0 20px; font-size: clamp(44px, min(6.5vw, 11vh), 88px); font-weight: 800; line-height: .95; letter-spacing: -4px; }
-.heroText p { max-width: 420px; margin-bottom: 28px; font-size: 13px; line-height: 1.9; font-weight: 500; }
+.reflectHero { 
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden; 
+    padding: 0px max(6%, calc((100% - 1260px) / 2)) 24px; 
+    background: var(--lime); }
+.heroMain { 
+    flex: 1; 
+    min-height: 0; 
+    display: grid; 
+    grid-template-columns: 1.05fr 1fr; 
+    gap: 48px; 
+    align-items: stretch; 
+    padding-left: 15px;
+}
+.heroText { 
+    align-self: center; }
+.heroText .sectionLabel { 
+    color: rgba(21,26,18,.7); 
+font-size: 12px;}
+.heroText h1 { 
+    margin: 12px 0 20px; 
+    font-size: clamp(70px, min(6.5vw, 11vh), 88px); 
+    font-weight: 800; 
+    line-height: .95; 
+    letter-spacing: -4px; }
+.heroText p { 
+    max-width: 420px; 
+    margin-bottom: 28px; 
+    font-size: 14px; 
+    line-height: 1.5; 
+    font-weight: 400; }
 
 /* Collage de fotos */
 .heroPhotos { min-height: 0; padding: 8px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 14px; }
