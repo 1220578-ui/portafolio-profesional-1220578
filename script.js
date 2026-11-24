@@ -593,8 +593,7 @@ a1: {
         b1: {
             titulo: "Fintech ante la ia",
             descripcion: "A través del análisis del mercado FINTECH, aprendí a identificar y comparar los marcos regulatorios de distintos países, como México, China, Estados Unidos y Reino Unido, así como a reconocer cómo las disposiciones legales condicionan la operación, expansión y competitividad de las empresas.",
-            fotos: ["conocimiento1.png",
-                "conocimiento11.png",
+            fotos: ["conocimiento11.png",
                 "conocimiento12.png",
                 "conocimiento13.png"
             ],
@@ -604,25 +603,31 @@ a1: {
         b2: {
             titulo: "Indicadores Unión Europea",
             descripcion: "Analicé los principales indicadores económicos de la Unión Europea, identificando tendencias y diferencias entre sus países. El desarrollo de un dashboard interactivo en R me permitió comparar los 27 países entre 2010 y 2023 y fortalecer mi capacidad para interpretar datos y convertirlos en información útil para la toma de decisiones.",
-            fotos: ["conocimiento2.png",
-                "conocimiento21.png",
+            fotos: ["conocimiento21.png",
                 "conocimiento22.png",
-                "conocimiento23.png"
+                "conocimiento23.png",
+                "conocimiento24.png"
             ],
             documento: "https://drive.google.com/file/d/1B7oA3hCzEZQvasTFQ_Miri7LrBLFgFde/view?usp=sharing"
         },
 
         c1: {
-            titulo: "Jazte en el mercado tunecino",
+            titulo: "Jaztea en el mercado tunecino",
             descripcion: "Para encontrar una forma viable de introducir la marca en Túnez, considerando que sus hábitos de consumo y condiciones de mercado eran distintos a los del mercado de origen. Analizamos las barreras de entrada, la competencia y las preferencias locales para detectar qué aspectos de la propuesta original podían representar un obstáculo.",
-            fotos: [],
+            fotos: [ "investigacion12.png",
+                "investigacion13.png",
+                "investigacion11.png"
+            ],
             documento: "https://drive.google.com/drive/folders/1BGzgYqBVwwcUP37FwWYNnX8UETQwwlkw?usp=sharing"
         },
 
         c2: {
             titulo: "Pensamiento crítico",
             descripcion: "En esta investigación analicé la relación entre resiliencia y desempeño laboral mediante pruebas estadísticas y análisis de clústeres, identificando patrones y perfiles que permitieron interpretar los resultados y formular conclusiones sobre ambas variables en las PyMEs.",
-            fotos: [],
+            fotos: ["investigacion21.png",
+                "investigacion22.png",
+                "investigacion23.png"
+            ],
             documento: "https://drive.google.com/drive/folders/1OMrRjrpNggmaY368UEyCps4DdhcRWMNJ?usp=sharing"
         },
 
