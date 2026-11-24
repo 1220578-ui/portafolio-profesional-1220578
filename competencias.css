@@ -248,266 +248,322 @@ button {
 /* =========================================
    5. PORTADA DE COMPETENCIAS
 ========================================= */
-:root {
-    --header-h: 76px;
-}
+/* =====================================================
+   PORTADA — COMPETENCIAS
+   Mismo estilo que la portada de inicio: fotos de fondo,
+   capa negra, contenido centrado y acentos lime.
+   Todas las clases llevan el prefijo "sc-" para no chocar
+   con lo que ya existe en competencias.css.
+===================================================== */
 
-.skillsHero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: clamp(80px, 11vw, 130px) 8% clamp(60px, 8vw, 95px);
-    background: var(--primary);
-    color: var(--surface);
+.skillsCover {
+    --lime:       #C5E83B;
+    --ink:        #151A12;
+    --white:      #FFFFFF;
+    --on-ink:     rgba(255, 255, 255, .78);
+    --radius:     3px;
+    --transition: .35s ease;
+    --photo-gray: .85;   /* 1 = blanco y negro, 0 = a color */
+    --cycle:      20s;   /* 4 fotos x 5s */
+
     position: relative;
+    width: 100%;
+    height: calc(100svh - var(--header-h, 62px));
+    min-height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    background: #000;
     isolation: isolate;
-    min-height: calc(100vh - var(--header-h));
-    min-height: calc(100svh - var(--header-h)); /* mejor en móviles */
-    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Fondo negro liso (sin cuadrícula ni resplandor) */
+/* ---------- Fotos de fondo ---------- */
 
-/* Las reglas de la portada usan #portada para que ninguna otra regla las pise */
-
-#portada.skillsHero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: clamp(80px, 11vw, 130px) 8% clamp(60px, 8vw, 95px);
-    overflow: hidden;
+.sc-slides {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
-/* Animaciones propias de la portada */
-
-@keyframes pillInLeft {
-    from { opacity: 0; transform: translateX(-90px) scale(0.92); }
-    to   { opacity: 1; transform: none; }
+.sc-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #151515;
+    filter: grayscale(var(--photo-gray));
+    opacity: 0;
+    will-change: opacity, transform;
+    animation: scSlideShow var(--cycle) linear infinite;
 }
 
-@keyframes pillInRight {
-    from { opacity: 0; transform: translateX(calc(6% + 90px)) rotate(6deg) scale(0.9); }
-    to   { opacity: 1; transform: translateX(6%) rotate(-1.5deg); }
+.sc-slide:nth-child(1) { animation-delay: 0s; }
+.sc-slide:nth-child(2) { animation-delay: 5s; }
+.sc-slide:nth-child(3) { animation-delay: 10s; }
+.sc-slide:nth-child(4) { animation-delay: 15s; }
+
+@keyframes scSlideShow {
+    0%   { opacity: 0; transform: scale(1.02); }
+    6%   { opacity: 1; }
+    25%  { opacity: 1; }
+    31%  { opacity: 0; transform: scale(1.12); }
+    100% { opacity: 0; transform: scale(1.12); }
 }
 
-@keyframes heroFloat {
-    0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(-14px); }
-}
+/* ---------- Capa negra traslúcida ---------- */
 
-@keyframes sway {
-    0%, 100% { rotate: -2deg; }
-    50%      { rotate: 2.5deg; }
-}
-
-@keyframes heroFadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: none; }
-}
-
-/* Contenedor de las dos tiras (flota suavemente) */
-#portada .titleGroup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    max-width: 100%;
-    margin: 0 auto;
-    animation: heroFloat 5s ease-in-out 1.2s infinite;
-}
-
-#portada .pill {
-    max-width: 100%;
-    font-family: 'Unbounded', 'Poppins', sans-serif;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: 0;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--primary);
-    border-radius: 12px;
-}
-
-/* Tira larga: verde */
-#portada .pillMain {
-    position: relative;
+.sc-overlay {
+    position: absolute;
+    inset: 0;
     z-index: 1;
-    margin: 0;
-    padding: 0.55em 1.2em;
-    font-size: clamp(15px, 2.8vw, 40px);
-    background: var(--accent);
-    transition: background 0.35s ease, transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1);
-    animation: pillInLeft 0.8s cubic-bezier(0.22, 1.2, 0.36, 1) 0.1s backwards;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .6) 0%,
+        rgba(0, 0, 0, .85) 100%
+    );
 }
 
-/* Tira corta: blanca, encimada y un poco a la derecha */
-#portada .pillSmall {
+/* ---------- Contenido centrado ---------- */
+
+.sc-content {
     position: relative;
     z-index: 2;
-    align-self: flex-end;
-    margin: -0.3em 0 0;
-    padding: 0.5em 1.1em;
-    font-size: clamp(13px, 2.4vw, 34px);
-    background: #ffffff;
-    transform: translateX(6%) rotate(-1.5deg);
-    transition: background 0.35s ease, transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1);
-    animation:
-        pillInRight 0.8s cubic-bezier(0.22, 1.2, 0.36, 1) 0.35s backwards,
-        sway 3.6s ease-in-out 1.3s infinite;
+    width: 88%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
 }
 
-/* Al pasar el mouse, las tiras crecen y cambian de color entre sí */
-#portada .titleGroup:hover .pillMain {
-    background: #ffffff;
-    transform: scale(1.04);
+.sc-label {
+    margin-bottom: 18px;
+    color: var(--lime);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
-#portada .titleGroup:hover .pillSmall {
-    background: var(--accent);
-    transform: translateX(4%) rotate(-1.5deg) scale(1.1);
+/* Título: línea 1 blanca y apretada, línea 2 en bloque lime */
+
+.sc-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: clamp(3rem, 10vw, 6.6rem);
+    font-weight: 800;
+    line-height: .95;
 }
 
-/* Letras pequeñas de abajo: blancas */
-#portada .coverTag {
-    max-width: 560px;
-    margin: clamp(40px, 8vw, 110px) 0 0;
-    font-size: clamp(10px, 1.3vw, 14px);
-    font-weight: 600;
-    letter-spacing: 1px;
+.sc-line {
+    display: block;
+}
+
+.sc-line-big {
+    font-weight: 800;
+    letter-spacing: -.045em;
+    color: var(--white);
+}
+
+.sc-line-thin {
+    margin-top: .14em;
+    padding: .06em .22em .1em;
+    font-size: .52em;
+    font-weight: 800;
+    letter-spacing: -.03em;
+    color: var(--ink);
+    background: var(--lime);
+    border-radius: var(--radius);
+    rotate: -1.5deg;
+}
+
+.sc-career {
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: clamp(.78rem, 1.3vw, .95rem);
     line-height: 1.6;
-    text-transform: uppercase;
-    color: #ffffff;
-    animation: heroFadeUp 0.8s ease 0.8s backwards;
+    letter-spacing: .04em;
+    color: var(--on-ink);
 }
 
-/* Textos pequeños en las esquinas de arriba (detalle editorial discreto) */
-#portada .heroMeta {
-    position: absolute;
-    top: 24px;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
-    animation: heroFadeUp 0.8s ease 1s backwards;
-}
+/* ---------- Etiquetas (las 4 competencias, con enlace) ---------- */
 
-#portada .heroMetaLeft  { left: 8%; }
-#portada .heroMetaRight { right: 8%; }
-
-/* Accesos rápidos a las cuatro áreas */
-#portada .heroTabs {
-    position: absolute;
-    left: 8%;
-    right: 8%;
-    bottom: 30px;
+.sc-tags {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    animation: heroFadeUp 0.8s ease 1.1s backwards;
+    gap: 12px;
+    margin: 26px 0 0;
+    padding: 0;
 }
 
-#portada .heroTabs a {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+.sc-tags a {
+    display: block;
     padding: 9px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-size: .72rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: background 0.3s ease,
-                color 0.3s ease,
-                border-color 0.3s ease,
-                transform 0.35s cubic-bezier(0.3, 1.6, 0.5, 1);
+    color: var(--ink);
+    background: var(--white);
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius);
+    transition: rotate var(--transition), transform var(--transition),
+                background var(--transition), color var(--transition);
 }
 
-#portada .heroTabs b {
+.sc-tags li:nth-child(odd) a  { rotate: -1.5deg; }
+.sc-tags li:nth-child(even) a { rotate: 1.5deg; }
+
+.sc-tags a:hover {
+    rotate: 0deg;
+    transform: translateY(-3px);
+    background: var(--ink);
+    color: var(--white);
+}
+
+.sc-tags li:first-child a { background: var(--lime); }
+.sc-tags li:first-child a:hover { color: var(--lime); background: var(--ink); }
+
+/* ---------- Botones ---------- */
+
+.sc-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.sc-btn {
+    padding: 13px 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: .78rem;
     font-weight: 700;
-    color: var(--accent);
-    transition: color 0.3s ease;
+    transition: transform var(--transition), background var(--transition),
+                color var(--transition), border-color var(--transition);
 }
 
-#portada .heroTabs a:hover,
-#portada .heroTabs a:focus-visible {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--primary);
-    transform: translateY(-4px);
+.sc-btn:hover { transform: translateY(-3px); }
+.sc-btn:focus-visible,
+.sc-tags a:focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; }
+
+.sc-btn-primary {
+    background: var(--lime);
+    color: var(--ink);
+    border: 1.5px solid var(--lime);
+}
+.sc-btn-primary:hover { background: var(--white); border-color: var(--white); }
+
+.sc-btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid var(--white);
+}
+.sc-btn-secondary:hover { background: var(--white); color: var(--ink); }
+
+/* ---------- Animación de entrada ---------- */
+
+.sc-label,
+.sc-line,
+.sc-career,
+.sc-tags li,
+.sc-buttons {
+    opacity: 0;
+    transform: translateY(26px);
+    animation: scRise .9s cubic-bezier(.2, .7, .2, 1) forwards;
 }
 
-#portada .heroTabs a:hover b,
-#portada .heroTabs a:focus-visible b {
-    color: var(--primary);
+.sc-label   { animation-delay: .15s; }
+.sc-career  { animation-delay: .90s; }
+.sc-buttons { animation-delay: 1.55s; }
+
+.sc-tags li:nth-child(1) { animation-delay: 1.10s; }
+.sc-tags li:nth-child(2) { animation-delay: 1.20s; }
+.sc-tags li:nth-child(3) { animation-delay: 1.30s; }
+.sc-tags li:nth-child(4) { animation-delay: 1.40s; }
+
+.sc-line-big {
+    animation:
+        scRise .9s cubic-bezier(.2, .7, .2, 1) .35s forwards,
+        scTighten 1.4s cubic-bezier(.2, .7, .2, 1) .35s forwards;
 }
 
-#portada .heroTabs a:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
+.sc-line-thin {
+    animation: scRise .9s cubic-bezier(.2, .7, .2, 1) .6s forwards;
 }
 
-@media (max-width: 600px) {
-    #portada.skillsHero {
-        padding-bottom: 150px;
+@keyframes scRise {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scTighten {
+    from { letter-spacing: .04em; }
+    to   { letter-spacing: -.045em; }
+}
+
+/* ---------- Celulares ---------- */
+
+@media (max-width: 700px) {
+
+    .skillsCover {
+        height: auto;
+        min-height: calc(100svh - 95px);
+        padding: 60px 0;
     }
 
-    #portada .heroMetaLeft  { left: 6%; }
-    #portada .heroMetaRight { right: 6%; }
-    #portada .heroTabs      { left: 6%; right: 6%; }
+    .sc-label { font-size: .7rem; }
+
+    .sc-title { font-size: clamp(2.6rem, 13vw, 4rem); }
+
+    .sc-career { max-width: 320px; }
+
+    .sc-tags { gap: 8px; margin-top: 20px; }
+    .sc-tags a { padding: 7px 12px; font-size: .66rem; }
+
+    .sc-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 26px;
+        width: 100%;
+        max-width: 300px;
+        margin-inline: auto;
+    }
+
+    .sc-btn { width: 100%; }
 }
+
+@media (max-height: 660px) and (min-width: 701px) {
+    .sc-tags { display: none; }
+}
+
+/* ---------- Accesibilidad ---------- */
 
 @media (prefers-reduced-motion: reduce) {
-    #portada .titleGroup,
-    #portada .pillSmall {
+
+    .sc-slide { animation-duration: 60s; }
+
+    .sc-label,
+    .sc-line,
+    .sc-career,
+    .sc-tags li,
+    .sc-buttons {
+        opacity: 1;
+        transform: none;
         animation: none;
+        transition: none;
     }
-}
-
-.heroButton {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 32px;
-    border: 1px solid var(--accent);
-    border-radius: var(--radius-sm);
-    background: var(--accent);
-    color: var(--primary);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-decoration: none;
-    box-shadow: 0 0 18px rgba(216, 255, 104, 0.3);
-    transition: 0.35s ease;
-}
-
-.heroButton::after {
-    content: "↓";
-    transition: transform 0.35s ease;
-}
-
-.heroButton:hover,
-.heroButton:focus-visible {
-    background: var(--primary);
-    color: var(--accent);
-    box-shadow: 0 0 22px rgba(216, 255, 104, 0.45);
-}
-
-.heroButton:hover::after {
-    transform: translateY(3px);
-}
-
-.heroButton:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
-}
+}  
 
 /* =========================================
    6. CARPETA DE COMPETENCIAS
