@@ -591,19 +591,19 @@ a1: {
         },
 
         b1: {
-            titulo: "Gestión empresarial",
-            descripcion: "Considero que he desarrollado esta competencia al aplicar, junto con mi equipo, los conocimientos adquiridos durante mi formación para estructurar un proyecto empresarial desde su concepción hasta su evaluación. A través de Xëpi trabajamos en la definición del modelo de negocio, el análisis de mercado, la identidad corporativa, la estructura organizacional, los procesos de producción, las estrategias comerciales y la planeación financiera.",
-            fotos: ["conocimiento1.jpeg",
-                "conocimiento11.jpeg",
-                "conocimiento12.jpeg",
-                "conocimiento13.jpeg"
+            titulo: "Fintech ante la ia",
+            descripcion: "A través del análisis del mercado FINTECH, aprendí a identificar y comparar los marcos regulatorios de distintos países, como México, China, Estados Unidos y Reino Unido, así como a reconocer cómo las disposiciones legales condicionan la operación, expansión y competitividad de las empresas.",
+            fotos: ["conocimiento1.png",
+                "conocimiento11.png",
+                "conocimiento12.png",
+                "conocimiento13.png"
             ],
-            documento: "https://drive.google.com/drive/folders/1YMlfGXRRCAkIOwqMsDyY4SiOHBoS1TXH?usp=sharing"
+            documento: "https://drive.google.com/file/d/1BE8lqbZhlTMMYh3V04Qag19mSONjrDDq/view?usp=sharing"
         },
 
         b2: {
-            titulo: "Negocios Internacionales",
-            descripcion: "Durante el trabajo identificamos factores externos que afectan su desempeño, como la dependencia energética, el bajo crecimiento económico y los cambios en su estructura poblacional. Esta experiencia me permitió fortalecer mi capacidad para relacionar acontecimientos geopolíticos con sus consecuencias económicas, contrastar información y fundamentar conclusiones a partir de datos e indicadores.",
+            titulo: "Indicadores Unión Europea",
+            descripcion: "Analicé los principales indicadores económicos de la Unión Europea, identificando tendencias y diferencias entre sus países. El desarrollo de un dashboard interactivo en R me permitió comparar los 27 países entre 2010 y 2023 y fortalecer mi capacidad para interpretar datos y convertirlos en información útil para la toma de decisiones.",
             fotos: ["conocimiento2.png",
                 "conocimiento21.png",
                 "conocimiento22.png",
@@ -613,29 +613,29 @@ a1: {
         },
 
         c1: {
-            titulo: "Investigación de mercados",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
+            titulo: "Jazte en el mercado tunecino",
+            descripcion: "Para encontrar una forma viable de introducir la marca en Túnez, considerando que sus hábitos de consumo y condiciones de mercado eran distintos a los del mercado de origen. Analizamos las barreras de entrada, la competencia y las preferencias locales para detectar qué aspectos de la propuesta original podían representar un obstáculo.",
             fotos: [],
             documento: "https://drive.google.com/drive/folders/1BGzgYqBVwwcUP37FwWYNnX8UETQwwlkw?usp=sharing"
         },
 
         c2: {
             titulo: "Pensamiento crítico",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
+            descripcion: "En esta investigación analicé la relación entre resiliencia y desempeño laboral mediante pruebas estadísticas y análisis de clústeres, identificando patrones y perfiles que permitieron interpretar los resultados y formular conclusiones sobre ambas variables en las PyMEs.",
             fotos: [],
             documento: "https://drive.google.com/drive/folders/1OMrRjrpNggmaY368UEyCps4DdhcRWMNJ?usp=sharing"
         },
 
         d1: {
-            titulo: "Gestión de proyectos",
-            descripcion: "Proyecto Integrador: Xëpi.",
+            titulo: "Proyecto integrador: Xëpi",
+            descripcion: "Organizamos el trabajo por áreas y distribuimos las actividades según las habilidades y conocimientos de cada integrante. Esto permitió establecer responsabilidades claras, coordinar los avances y conectar las aportaciones individuales para desarrollar cada etapa del proyecto.",
             fotos: ["integracion1.jpeg", "images/integracion2.jpeg", "images/integracion3.jpeg"],
             documento: "https://drive.google.com/file/d/1t1vi8V6j7gCY7gejg2Fe4yVqnTEKZIuT/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
         },
 
         d2: {
-            titulo: "Trabajo colaborativo",
-            descripcion: "Escribe aquí la descripción de esta evidencia.",
+            titulo: "Servicio comunitario UPS",
+            descripcion: "Aunque teníamos un plan basado en el programa Salud en Casa, enfocado en la salud física, la situación de la familia, que atravesaba un duelo, nos llevó a replantear la actividad. Aprendí que gestionar un proyecto también implica reconocer cuándo las actividades planeadas no responden a las necesidades de las personas y ajustar lo previsto para aprovechar mejor el tiempo y atender su situación.",
             fotos: [],
             documento: "https://drive.google.com/file/d/1vrRv68YGCBB6O_te2jI-p0vkZjqRPVj0/view?usp=sharing"
         }
