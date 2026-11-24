@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio profesional de Militza Montalvo Jacinto.">
-    <title>Portafolio Profesional | M</title>
+    <title>Portafolio Profesional | Militza Montalvo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,55 +15,70 @@
 
     <main class="cover">
 
-        <!-- Video de fondo -->
-  <!-- Fotos de fondo -->
-<div class="cover-slides">
-    <div class="slide" style="background-image: url('fondo1.png');"></div>
-    <div class="slide" style="background-image: url('adventus.jpeg');"></div>
-    <div class="slide" style="background-image: url('club.jpeg');"></div>
-    <div class="slide" style="background-image: url('enactus.jpeg');"></div>
-</div>
+        <!-- Fotos de fondo (carrusel con zoom suave) -->
+        <div class="cover-slides" aria-hidden="true">
+            <div class="slide" style="background-image: url('xepi1.jpeg');"></div>
+            <div class="slide" style="background-image: url('xepi2.jpeg');"></div>
+            <div class="slide" style="background-image: url('club1.jpeg');"></div>
+            <div class="slide" style="background-image: url('enactus1.jpeg');"></div>
+        </div>
 
-<!-- Capa oscura para mejorar la lectura -->
-<div class="cover-overlay"></div>
-
-        <!-- Capa oscura para mejorar la lectura -->
+        <!-- Capas de ambiente -->
         <div class="cover-overlay"></div>
+        <div class="cover-glow glow-1"></div>
+        <div class="cover-glow glow-2"></div>
+        <div class="cover-grain"></div>
+
+        <!-- Marco decorativo -->
+        <div class="cover-frame" aria-hidden="true"></div>
+        <span class="cover-side" aria-hidden="true">Portafolio · Edición 2026</span>
 
         <!-- Contenido principal -->
         <section class="cover-content">
 
-            <p class="cover-years">2022 — 2026</p>
+            <p class="cover-years"><span></span>2022 — 2026<span></span></p>
 
             <h1 class="cover-title">
-                PORTAFOLIO PROFESIONAL
+                <span class="line line-outline">PORTAFOLIO</span>
+                <span class="line line-solid">PROFESIONAL</span>
             </h1>
 
-            <h2 class="cover-name">
-                Militza Montalvo Jacinto
-            </h2>
+            <h2 class="cover-name">Militza Montalvo Jacinto</h2>
 
             <p class="cover-career">
                 Licenciatura en Administración y Negocios Internacionales
             </p>
 
+            <ul class="cover-tags" aria-label="Áreas de enfoque">
+                <li>Liderazgo</li>
+                <li>Emprendimiento</li>
+                <li>Marketing</li>
+                <li>Negocios globales</li>
+            </ul>
+
             <div class="cover-buttons">
 
                 <a href="inicio.html" class="button button-primary">
-                    Inicio
+                    Entrar al portafolio
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
 
-                <a
-                    href="archivos/cv-mili.pdf"
-                    class="button button-secondary"
-                    target="_blank"
-                    rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1k17FIFrnb8-Bb6pEsugTr1ao-uf0H8Xe/view?usp=sharing"
+                   class="button button-secondary"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Descargar CV
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
                 </a>
 
             </div>
 
         </section>
+
+        <!-- Indicadores del carrusel -->
+        <div class="cover-dots" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+        </div>
 
     </main>
 

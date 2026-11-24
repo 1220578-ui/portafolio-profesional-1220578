@@ -1,5 +1,13 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
 
-/* Configuración general */
+:root {
+    --lime: #d8ff68;
+    --ink: #0d1110;
+    --white: #ffffff;
+    --cycle: 20s; /* duración total del carrusel (4 fotos x 5s) */
+}
 
 * {
     margin: 0;
@@ -12,203 +20,31 @@ body {
     width: 100%;
     min-height: 100%;
     font-family: 'Poppins', sans-serif;
+    background: var(--ink);
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-/* Portada */
+/* =========================================
+   PORTADA
+   ========================================= */
 
 .cover {
     position: relative;
     width: 100%;
-    height: 100vh;
     height: 100svh;
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background: #101515;
-}
-
-/* Video de fondo */
-
-.cover-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-/* Capa sobre el video */
-
-.cover-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.38),
-            rgba(0, 0, 0, 0.55)
-        );
-}
-
-/* Contenido centrado */
-
-.cover-content {
-    position: relative;
-    z-index: 2;
-
-    width: 90%;
-    max-width: 1200px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    color: white;
-}
-
-/* Años */
-
-.cover-years {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 4.2px;
-    color: #d8ff68;
-    margin-bottom: 15px;
-}
-
-/* Título principal */
-
-.cover-title {
-    width: 100%;
-    white-space: nowrap;
-    font-size: clamp(1rem, 4.8vw, 4.8rem);
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    line-height: 1;
-}
-
-/* Nombre */
-
-.cover-name {
-    margin-top: 5px;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    font-weight: 340;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1.6px;
-}
-
-/* Carrera */
-
-.cover-career {
-    margin-top: 6px;
-    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.85);
-}
-
-/* Botones */
-
-.cover-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-top: 25px;
-}
-
-.button {
-    min-width: 60%;
-    padding: 10px 25px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    text-decoration: none;
-    font-size: .92rem;
-    font-weight: 600;
-    transition: all 0.10s ease;
-}
-
-/* Botón principal */
-
-.button-primary {
-    background: #d8ff68;
-    color: #151515;
-    border: 1px solid #d8ff68;
-}
-
-.button-primary:hover {
-    background: #ffffff;
-    border-color: #ffffff;
-    transform: translateY(-4px);
-}
-
-/* Botón secundario */
-
-.button-secondary {
-    background: transparent;
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-}
-
-.button-secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-4px);
-}
-
-/* Adaptación a celulares */
-
-@media (max-width: 600px) {
-
-    .cover-content {
-        width: 94%;
-    }
-
-    .cover-title {
-        font-size: clamp(1.2rem, 6vw, 2rem);
-        letter-spacing: 0;
-    }
-
-    .cover-name {
-        font-size: 1.5rem;
-    }
-
-    .cover-career {
-        max-width: 330px;
-        line-height: 1.6;
-    }
-
-    .cover-buttons {
-        gap: 10px;
-        margin-top: 32px;
-    }
-
-    .button {
-        min-width: 125px;
-        padding: 13px 16px;
-        font-size: 0.8rem;
-    }
-}
-/* ---------- FONDO CON FOTOS ---------- */
-
-.cover {
-    position: relative;
-    min-height: 100vh;
     overflow: hidden;
     background: #000;
+    isolation: isolate;
 }
+
+/* ---------- Fotos de fondo ---------- */
 
 .cover-slides {
     position: absolute;
@@ -221,49 +57,474 @@ body {
     inset: 0;
     background-size: cover;
     background-position: center;
+    background-color: #151a19;
     opacity: 0;
     will-change: opacity, transform;
-    animation: slideShow 16s linear infinite;
+    animation: slideShow var(--cycle) linear infinite;
 }
 
-/* Cada foto entra 4s después de la anterior */
 .slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 4s; }
-.slide:nth-child(3) { animation-delay: 8s; }
-.slide:nth-child(4) { animation-delay: 12s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
 
+/* Fundido + zoom lento (efecto Ken Burns) */
 @keyframes slideShow {
-    0%   { opacity: 0; transform: scale(1); }
-    12%  { opacity: 1; }                          /* fundido de entrada */
+    0%   { opacity: 0; transform: scale(1.02); }
+    6%   { opacity: 1; }
     25%  { opacity: 1; }
-    37%  { opacity: 0; transform: scale(1.03); }  /* fundido de salida */
-    100% { opacity: 0; transform: scale(1.03); }
+    31%  { opacity: 0; transform: scale(1.14); }
+    100% { opacity: 0; transform: scale(1.14); }
 }
 
-/* ---------- CAPA OSCURA ---------- */
+/* ---------- Capas de ambiente ---------- */
 
 .cover-overlay {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.55) 0%,
-        rgba(0, 0, 0, 0.85) 100%
-    );
+    background:
+        radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%, rgba(0,0,0,.82) 100%),
+        linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.8));
 }
 
-/* ---------- CONTENIDO (encima de todo) ---------- */
+.cover-glow {
+    position: absolute;
+    z-index: 1;
+    width: 46vmax;
+    height: 46vmax;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .22;
+    pointer-events: none;
+    animation: floatGlow 14s ease-in-out infinite alternate;
+}
+
+.glow-1 {
+    top: -18vmax;
+    left: -14vmax;
+    background: var(--lime);
+}
+
+.glow-2 {
+    bottom: -20vmax;
+    right: -16vmax;
+    background: #3fb98f;
+    animation-delay: -7s;
+}
+
+@keyframes floatGlow {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(5vmax, 4vmax) scale(1.15); }
+}
+
+/* Textura de grano sutil */
+.cover-grain {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: .09;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Marco y texto lateral ---------- */
+
+.cover-frame {
+    position: absolute;
+    inset: clamp(12px, 2.2vw, 28px);
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 18px;
+    pointer-events: none;
+}
+
+.cover-frame::before,
+.cover-frame::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--lime);
+    pointer-events: none;
+}
+
+.cover-frame::before {
+    top: -1px;
+    left: -1px;
+    border-right: 0;
+    border-bottom: 0;
+    border-top-left-radius: 18px;
+}
+
+.cover-frame::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: 0;
+    border-top: 0;
+    border-bottom-right-radius: 18px;
+}
+
+.cover-side {
+    position: absolute;
+    z-index: 2;
+    right: clamp(28px, 4vw, 54px);
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .55);
+}
+
+/* =========================================
+   CONTENIDO
+   ========================================= */
 
 .cover-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
 }
 
-/* ---------- ACCESIBILIDAD ---------- */
+/* Años */
+
+.cover-years {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: .85rem;
+    font-weight: 500;
+    letter-spacing: .4em;
+    color: var(--lime);
+    margin-bottom: 22px;
+}
+
+.cover-years span {
+    width: clamp(28px, 6vw, 64px);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--lime));
+}
+
+.cover-years span:last-child {
+    transform: scaleX(-1);
+}
+
+/* Título */
+
+.cover-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    line-height: .95;
+    letter-spacing: -.01em;
+    font-size: clamp(2.4rem, 9.5vw, 7.6rem);
+}
+
+.line {
+    display: block;
+}
+
+.line-outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, .9);
+}
+
+.line-solid {
+    color: var(--lime);
+    text-shadow: 0 0 40px rgba(216, 255, 104, .35);
+}
+
+/* Nombre */
+
+.cover-name {
+    margin-top: 22px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 3.6vw, 2.8rem);
+    letter-spacing: .02em;
+}
+
+/* Carrera */
+
+.cover-career {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: clamp(.85rem, 1.5vw, 1.1rem);
+    letter-spacing: .08em;
+    color: rgba(255, 255, 255, .82);
+}
+
+/* Etiquetas */
+
+.cover-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.cover-tags li {
+    padding: 7px 16px;
+    font-size: .74rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, .28);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.cover-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 34px;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    padding: 14px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: .92rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    transition: transform .25s ease, background .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.button svg {
+    transition: transform .25s ease;
+}
+
+.button:hover svg {
+    transform: translateX(4px);
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--white);
+    outline-offset: 3px;
+}
+
+/* Principal */
+
+.button-primary {
+    background: var(--lime);
+    color: #151515;
+    border: 1px solid var(--lime);
+    box-shadow: 0 8px 30px rgba(216, 255, 104, .35);
+}
+
+.button-primary::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.7), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3.6s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0%, 55%  { left: -80%; }
+    100%     { left: 140%; }
+}
+
+.button-primary:hover {
+    background: var(--white);
+    border-color: var(--white);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(255, 255, 255, .3);
+}
+
+/* Secundario */
+
+.button-secondary {
+    background: rgba(255, 255, 255, .08);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, .6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.button-secondary:hover {
+    background: rgba(255, 255, 255, .2);
+    border-color: var(--white);
+    transform: translateY(-4px);
+}
+
+/* =========================================
+   INDICADORES DEL CARRUSEL
+   ========================================= */
+
+.cover-dots {
+    position: absolute;
+    z-index: 3;
+    bottom: clamp(26px, 4.2vw, 48px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.cover-dots i {
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .3);
+    animation: dot var(--cycle) linear infinite;
+}
+
+.cover-dots i:nth-child(1) { animation-delay: 0s; }
+.cover-dots i:nth-child(2) { animation-delay: 5s; }
+.cover-dots i:nth-child(3) { animation-delay: 10s; }
+.cover-dots i:nth-child(4) { animation-delay: 15s; }
+
+@keyframes dot {
+    0%   { background: rgba(255, 255, 255, .3); }
+    4%   { background: var(--lime); }
+    25%  { background: var(--lime); }
+    29%  { background: rgba(255, 255, 255, .3); }
+    100% { background: rgba(255, 255, 255, .3); }
+}
+
+/* =========================================
+   ANIMACIÓN DE ENTRADA
+   ========================================= */
+
+.cover-years,
+.line,
+.cover-name,
+.cover-career,
+.cover-tags,
+.cover-buttons {
+    opacity: 0;
+    transform: translateY(26px);
+    animation: rise .9s cubic-bezier(.2, .7, .2, 1) forwards;
+}
+
+.cover-years   { animation-delay: .15s; }
+.line-outline  { animation-delay: .35s; }
+.line-solid    { animation-delay: .55s; }
+.cover-name    { animation-delay: .80s; }
+.cover-career  { animation-delay: .95s; }
+.cover-tags    { animation-delay: 1.10s; }
+.cover-buttons { animation-delay: 1.25s; }
+
+@keyframes rise {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .cover-side {
+        display: none;
+    }
+
+    .cover-content {
+        width: 86%;
+    }
+
+    .cover-years {
+        font-size: .72rem;
+        letter-spacing: .3em;
+    }
+
+    .line-outline {
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .cover-career {
+        max-width: 320px;
+        line-height: 1.6;
+    }
+
+    .cover-tags {
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .cover-tags li {
+        padding: 6px 12px;
+        font-size: .66rem;
+    }
+
+    .cover-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 26px;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+}
+
+@media (max-height: 640px) {
+    .cover-tags {
+        display: none;
+    }
+}
+
+/* =========================================
+   ACCESIBILIDAD
+   ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
+
     .slide {
-        animation-duration: 48s;
+        animation-duration: 60s;
+    }
+
+    .cover-glow,
+    .button-primary::after {
+        animation: none;
+    }
+
+    .cover-years,
+    .line,
+    .cover-name,
+    .cover-career,
+    .cover-tags,
+    .cover-buttons {
+        opacity: 1;
+        transform: none;
+        animation: none;
     }
 }
