@@ -129,42 +129,45 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
 
-        adventus: {
+adventus: {
 
-            puesto: "Asistente editorial y administrativa",
+    puesto: "Asistente editorial y administrativa",
 
-            herramientas: [
-                "Excel para el control de ventas, inventario y seguimiento de pagos",
-                "Manejo de plataformas bancarias y herramientas administrativas",
-                "Gestión y mantenimiento de sitios web",
-                "Organización y digitalización de información"
-            ],
+    herramientas: [
+        "Excel para el control de ventas, inventario y seguimiento de pagos",
+        "HTML y CSS para edición y mantenimiento de sitios web",
+        "WordPress para gestión y actualización de contenidos digitales",
+        "Herramientas digitales para organización y gestión documental"
+    ],
 
-            programas: [
-                "Gestión administrativa y operativa de una empresa editorial",
-                "Organización y digitalización de procesos e información administrativa",
-                "Seguimiento de operaciones comerciales y control de recursos"
-            ],
+    programas: [
+        "Gestión administrativa y operativa de una empresa editorial",
+        "Digitalización y organización de información administrativa",
+        "Mantenimiento y actualización de plataformas web editoriales",
+        "Seguimiento de operaciones comerciales y control de recursos"
+    ],
 
-            habituales: [
-                "Control de ventas e inventario",
-                "Seguimiento y reporte de pagos",
-                "Mantenimiento del sitio web",
-                "Organización y actualización de información administrativa",
-                "Apoyo en actividades operativas y seguimiento de pendientes"
-            ],
+    habituales: [
+        "Control y actualización de registros de ventas e inventario",
+        "Seguimiento de pagos y elaboración de reportes administrativos",
+        "Realización de conciliaciones sencillas y revisión de registros",
+        "Edición y mantenimiento de sitios web mediante HTML, CSS y WordPress",
+        "Actualización y organización de contenidos digitales",
+        "Organización de información administrativa y seguimiento de pendientes",
+        "Apoyo en actividades operativas y coordinación de tareas administrativas"
+    ],
 
-            extraordinarias: [
-                "Apoyo en la continuidad de las actividades administrativas durante cambios en el equipo de trabajo, asumiendo nuevas responsabilidades y colaborando directamente con la gerencia de Recursos Humanos"
-            ],
+    extraordinarias: [
+        "Apoyo en la continuidad de las actividades administrativas durante cambios en el equipo de trabajo, asumiendo nuevas responsabilidades y colaborando directamente con la gerencia de Recursos Humanos."
+    ],
 
-            fotos: [
-                "adventus1.jpeg",
-                "adventus2.jpeg",
-                "adventus3.jpeg"
-            ]
+    fotos: [
+        "adventus1.jpeg",
+        "adventus2.jpeg",
+        "adventus3.jpeg"
+    ]
 
-        },
+},
 
 enactus: {
 
