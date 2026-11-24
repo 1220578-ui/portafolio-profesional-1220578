@@ -575,8 +575,8 @@ a1: {
     titulo: "Fe y propósito",
     descripcion: "Escribe aquí la descripción de esta evidencia.",
     fotos: [
+        "cosmovision1.png",
         "cosmovision11.png",
-        "cosmovision12.png",
         "cosmovision13.png"
     ],
     documento: "https://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
