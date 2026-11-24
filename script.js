@@ -584,8 +584,8 @@ a1: {
         a2: {
             titulo: "Desarrollo integral",
             descripcion: "He fortalecido esta competencia al reconocer que Dios puede dirigir mis decisiones y propósitos a través de personas y oportunidades externas a la iglesia. Quienes no comparten nuestras creencias no deben ser considerados ajenos a nuestra misión, pues también pueden convertirse en aliados estratégicos para impulsar proyectos y contribuir a su desarrollo.",
-            fotos: ["cosmovision2.png",
-                    "cosmovision21.png"
+            fotos: ["cosmovision2.jpeg",
+                    "cosmovision21.jpeg"
             ],
             documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
         },
