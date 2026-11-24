@@ -1,29 +1,37 @@
-/* =========================================
-   CONFIGURACIÓN GENERAL
-   ========================================= */
+/* =====================================================
+   PORTADA — MILITZA MONTALVO
+   Estilo: Editorial Lime (mismo sistema que el portafolio)
+   Las clases son las mismas de antes: el HTML no cambia.
+===================================================== */
 
 :root {
-    /* Paleta (cámbiala aquí y se actualiza toda la portada) */
-    --accent: #d8ff68;   /* verde lima original */
-    --coral:  #b4e86a;   /* verde hoja */
-    --sage:   #8fd19e;   /* verde menta */
-    --sky:    #c9efd6;   /* verde claro */
-    --ink:    #0d1110;
-    --white:  #ffffff;
-    --cycle:  20s;       /* 4 fotos x 5s */
+    /* Paleta del portafolio */
+    --lime:       #C5E83B;
+    --lime-dark:  #A7CE21;
+    --ink:        #151A12;
+    --paper:      #FAFAF5;
+    --white:      #FFFFFF;
+    --on-ink:     rgba(255, 255, 255, .78);
+    --radius:     3px;
+    --transition: .35s ease;
+
+    /* Fotos de fondo: 1 = blanco y negro (como en el portafolio), 0 = a color */
+    --photo-gray: .85;
+
+    --cycle: 20s; /* 4 fotos x 5s */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html,
 body {
     width: 100%;
     min-height: 100%;
-    font-family: 'Poppins', sans-serif;
     background: var(--ink);
 }
 
@@ -44,8 +52,20 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #000;
+    background: var(--ink);
     isolation: isolate;
+}
+
+/* Franja lime inferior, igual que el color de las secciones del portafolio */
+.cover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    z-index: 3;
+    background: var(--lime);
 }
 
 /* ---------- Fotos de fondo ---------- */
@@ -61,7 +81,8 @@ body {
     inset: 0;
     background-size: cover;
     background-position: center;
-    background-color: #151a19;
+    background-color: #1c2218;
+    filter: grayscale(var(--photo-gray));
     opacity: 0;
     will-change: opacity, transform;
     animation: slideShow var(--cycle) linear infinite;
@@ -80,178 +101,204 @@ body {
     100% { opacity: 0; transform: scale(1.12); }
 }
 
-/* ---------- Capa oscura ---------- */
+/* ---------- Capa oscura (tinta del portafolio, más fuerte a la izquierda) ---------- */
 
 .cover-overlay {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.55) 0%,
-        rgba(0, 0, 0, 0.85) 100%
-    );
+    background:
+        linear-gradient(
+            to right,
+            rgba(21, 26, 18, .92) 0%,
+            rgba(21, 26, 18, .62) 60%,
+            rgba(21, 26, 18, .45) 100%
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(21, 26, 18, .25) 0%,
+            rgba(21, 26, 18, .7) 100%
+        );
 }
 
 /* =========================================
-   CONTENIDO
+   CONTENIDO (alineado a la izquierda, como el hero del portafolio)
    ========================================= */
 
 .cover-content {
     position: relative;
     z-index: 2;
-    width: 90%;
+    width: 88%;
     max-width: 1100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     color: var(--white);
 }
 
-/* Años: bloque de color sólido */
+/* Años: etiqueta de sección con barra lime */
 
 .cover-years {
-    padding: 7px 20px;
-    border-radius: 999px;
-    background: var(--accent);
-    color: #1a1a1a;
-    font-size: .8rem;
-    font-weight: 600;
-    letter-spacing: .3em;
-    padding-left: calc(20px + .3em);
-    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: var(--lime);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
-/* ---------- Título: contraste de grosor y ancho ---------- */
+.cover-years::before {
+    content: "";
+    width: 28px;
+    height: 3px;
+    background: var(--lime);
+}
+
+/* ---------- Título: muy grueso y apretado ---------- */
 
 .cover-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: clamp(2.4rem, 9.5vw, 7.6rem);
-    line-height: 1;
+    align-items: flex-start;
+    font-size: clamp(3rem, 10vw, 6.6rem);
+    font-weight: 800;
+    line-height: .95;
 }
 
 .line {
     display: block;
 }
 
-/* Línea 1: gruesa y compacta */
+/* Línea 1: blanca, gruesa, con tracking negativo */
 .line-big {
     font-weight: 800;
-    letter-spacing: .01em;
+    letter-spacing: -.045em;
     color: var(--white);
 }
 
-/* Línea 2: delgada, pequeña y muy espaciada, en color */
+/* Línea 2: bloque lime con texto en tinta, ligeramente girado */
 .line-thin {
-    margin-top: .12em;
-    font-size: .5em;
-    font-weight: 200;
-    letter-spacing: .42em;
-    padding-left: .42em; /* compensa el espacio final para centrar */
-    color: var(--accent);
+    margin-top: .14em;
+    padding: .06em .22em .1em;
+    font-size: .52em;
+    font-weight: 800;
+    letter-spacing: -.03em;
+    color: var(--ink);
+    background: var(--lime);
+    border-radius: var(--radius);
+    rotate: -1.5deg;
 }
 
 /* ---------- Nombre: dos pesos ---------- */
 
 .cover-name {
-    margin-top: 26px;
-    font-size: clamp(1.4rem, 3.2vw, 2.5rem);
-    letter-spacing: .03em;
+    margin-top: 28px;
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
+    letter-spacing: -.01em;
     color: var(--white);
 }
 
 .cover-name strong {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .cover-name span {
-    font-weight: 200;
+    font-weight: 300;
 }
 
-/* Carrera */
+/* Carrera: línea superior como en las listas de datos */
 
 .cover-career {
-    margin-top: 10px;
-    font-weight: 300;
-    font-size: clamp(.8rem, 1.4vw, 1.05rem);
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, .8);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1.5px solid var(--lime);
+    font-weight: 400;
+    font-size: clamp(.78rem, 1.3vw, .95rem);
+    line-height: 1.6;
+    letter-spacing: .04em;
+    color: var(--on-ink);
 }
 
-/* ---------- Etiquetas de colores ---------- */
+/* ---------- Etiquetas tipo índice: blancas, borde tinta, giradas ---------- */
 
 .cover-tags {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    justify-content: flex-start;
+    gap: 12px;
     margin-top: 26px;
 }
 
 .cover-tags li {
-    padding: 8px 18px;
-    font-size: .74rem;
+    padding: 9px 16px;
+    font-size: .72rem;
     font-weight: 600;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: #1a1a1a;
-    border-radius: 999px;
-    transition: transform .2s ease;
+    color: var(--ink);
+    background: var(--white);
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius);
+    transition: rotate var(--transition), transform var(--transition),
+                background var(--transition), color var(--transition);
 }
+
+.cover-tags li:nth-child(odd)  { rotate: -1.5deg; }
+.cover-tags li:nth-child(even) { rotate: 1.5deg; }
 
 .cover-tags li:hover {
+    rotate: 0deg;
     transform: translateY(-3px);
+    background: var(--ink);
+    color: var(--white);
 }
 
-.tag-1 { background: var(--accent); }
-.tag-2 { background: var(--coral); }
-.tag-3 { background: var(--sage); }
-.tag-4 { background: var(--sky); }
+/* La primera etiqueta lleva el lime, como el número del índice */
+.tag-1 { background: var(--lime) !important; }
+.tag-1:hover { color: var(--lime); }
 
 /* =========================================
-   BOTONES
+   BOTONES (rectángulos de 3px, igual que el portafolio)
    ========================================= */
 
 .cover-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 34px;
+    gap: 12px;
+    margin-top: 32px;
 }
 
 .button {
-    padding: 14px 34px;
+    padding: 13px 28px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border-radius: 999px;
+    border-radius: var(--radius);
     text-decoration: none;
-    font-size: .9rem;
-    font-weight: 600;
-    letter-spacing: .04em;
-    transition: transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    font-size: .78rem;
+    font-weight: 700;
+    transition: transform var(--transition), background var(--transition),
+                color var(--transition), border-color var(--transition);
 }
 
 .button:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .button:focus-visible {
-    outline: 3px solid var(--white);
+    outline: 3px solid var(--lime);
     outline-offset: 3px;
 }
 
+/* Principal: lime con texto en tinta (se lee bien sobre foto oscura) */
 .button-primary {
-    background: var(--accent);
-    color: #1a1a1a;
-    border: 2px solid var(--accent);
+    background: var(--lime);
+    color: var(--ink);
+    border: 1.5px solid var(--lime);
 }
 
 .button-primary:hover {
@@ -259,15 +306,16 @@ body {
     border-color: var(--white);
 }
 
+/* Secundario: contorno blanco */
 .button-secondary {
     background: transparent;
     color: var(--white);
-    border: 2px solid var(--white);
+    border: 1.5px solid var(--white);
 }
 
 .button-secondary:hover {
     background: var(--white);
-    color: #1a1a1a;
+    color: var(--ink);
 }
 
 /* =========================================
@@ -295,31 +343,24 @@ body {
 .tag-3 { animation-delay: 1.35s; }
 .tag-4 { animation-delay: 1.45s; }
 
-/* Las dos líneas del título "se abren": las letras pasan de juntas a espaciadas */
+/* La línea 1 "se cierra": el tracking pasa de abierto a apretado */
 .line-big {
     animation:
         rise .9s cubic-bezier(.2, .7, .2, 1) .35s forwards,
-        openBig 1.4s cubic-bezier(.2, .7, .2, 1) .35s forwards;
+        tightenBig 1.4s cubic-bezier(.2, .7, .2, 1) .35s forwards;
 }
 
 .line-thin {
-    animation:
-        rise .9s cubic-bezier(.2, .7, .2, 1) .6s forwards,
-        openThin 1.6s cubic-bezier(.2, .7, .2, 1) .6s forwards;
+    animation: rise .9s cubic-bezier(.2, .7, .2, 1) .6s forwards;
 }
 
 @keyframes rise {
     to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes openBig {
-    from { letter-spacing: -.06em; }
-    to   { letter-spacing: .01em; }
-}
-
-@keyframes openThin {
-    from { letter-spacing: .1em; padding-left: .1em; }
-    to   { letter-spacing: .42em; padding-left: .42em; }
+@keyframes tightenBig {
+    from { letter-spacing: .04em; }
+    to   { letter-spacing: -.045em; }
 }
 
 /* =========================================
@@ -334,23 +375,14 @@ body {
 
     .cover-years {
         font-size: .7rem;
-        letter-spacing: .24em;
     }
 
-    .line-thin {
-        letter-spacing: .3em;
-        padding-left: .3em;
-    }
-
-    @keyframes openThin {
-        from { letter-spacing: .1em; padding-left: .1em; }
-        to   { letter-spacing: .3em; padding-left: .3em; }
+    .cover-title {
+        font-size: clamp(2.6rem, 13vw, 4rem);
     }
 
     .cover-career {
         max-width: 320px;
-        line-height: 1.6;
-        letter-spacing: .08em;
     }
 
     .cover-tags {
@@ -359,20 +391,21 @@ body {
     }
 
     .cover-tags li {
-        padding: 6px 13px;
+        padding: 7px 12px;
         font-size: .66rem;
     }
 
     .cover-buttons {
         flex-direction: column;
-        gap: 12px;
+        align-items: stretch;
+        gap: 10px;
         margin-top: 26px;
         width: 100%;
+        max-width: 300px;
     }
 
     .button {
         width: 100%;
-        max-width: 280px;
     }
 }
 
@@ -401,5 +434,6 @@ body {
         opacity: 1;
         transform: none;
         animation: none;
+        transition: none;
     }
 }
