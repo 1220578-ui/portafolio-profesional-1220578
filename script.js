@@ -634,14 +634,18 @@ a1: {
         d1: {
             titulo: "Proyecto integrador: Xëpi",
             descripcion: "Organizamos el trabajo por áreas y distribuimos las actividades según las habilidades y conocimientos de cada integrante. Esto permitió establecer responsabilidades claras, coordinar los avances y conectar las aportaciones individuales para desarrollar cada etapa del proyecto.",
-            fotos: ["integracion1.jpeg", "images/integracion2.jpeg", "images/integracion3.jpeg"],
+            fotos: ["integracion13.jpeg",
+                "integracion11.jpeg",
+                "integracion12.jpeg"],
             documento: "https://drive.google.com/file/d/1t1vi8V6j7gCY7gejg2Fe4yVqnTEKZIuT/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
         },
 
         d2: {
             titulo: "Servicio comunitario UPS",
             descripcion: "Aunque teníamos un plan basado en el programa Salud en Casa, enfocado en la salud física, la situación de la familia, que atravesaba un duelo, nos llevó a replantear la actividad. Aprendí que gestionar un proyecto también implica reconocer cuándo las actividades planeadas no responden a las necesidades de las personas y ajustar lo previsto para aprovechar mejor el tiempo y atender su situación.",
-            fotos: [],
+            fotos: ["integracion23.jpg",
+                "integracion21.jpg",
+                "integracion22.jpg"],
             documento: "https://drive.google.com/file/d/1vrRv68YGCBB6O_te2jI-p0vkZjqRPVj0/view?usp=sharing"
         }
 
