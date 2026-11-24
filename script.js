@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 xepi: {
 
-    puesto: "Líder de equipo | Gerente general",
+    puesto: "Líder de equipo | Gerente general (2022-2026)",
 
     herramientas: [
         "HTML, CSS y JavaScript para el desarrollo de la página web",
@@ -130,136 +130,160 @@ xepi: {
 },
 
 
-        adventus: {
+adventus: {
 
-            puesto: "Escribe aquí tu puesto",
+    puesto: "Asistente editorial y administrativa",
 
-            herramientas: [
-                "Herramienta 1",
-                "Herramienta 2"
-            ],
+    herramientas: [
+        "Excel para el control de ventas, inventario y seguimiento de pagos",
+        "Manejo de plataformas bancarias y herramientas administrativas",
+        "Gestión y mantenimiento de sitios web",
+        "Organización y digitalización de información"
+    ],
 
-            programas: [
-                "Programa 1",
-                "Programa 2"
-            ],
+    programas: [
+        "Gestión administrativa y operativa de una empresa editorial",
+        "Organización y digitalización de procesos e información administrativa",
+        "Seguimiento de operaciones comerciales y control de recursos"
+    ],
 
-            habituales: [
-                "Control de ventas e inventario",
-                "Seguimiento y reporte de pagos",
-                "Mantenimiento del sitio web"
-            ],
+    habituales: [
+        "Control de ventas e inventario",
+        "Seguimiento y reporte de pagos",
+        "Mantenimiento del sitio web",
+        "Organización y actualización de información administrativa",
+        "Apoyo en actividades operativas y seguimiento de pendientes"
+    ],
 
-            extraordinarias: [
-                "Escribe aquí una función extraordinaria"
-            ],
+    extraordinarias: [
+        "Apoyo en la continuidad de las actividades administrativas durante cambios en el equipo de trabajo, asumiendo nuevas responsabilidades y colaborando directamente con la gerencia de Recursos Humanos"
+    ],
 
-            fotos: [
-                "trayectoria-adventus-1.jpeg",
-                "trayectoria-adventus-2.jpeg",
-                "trayectoria-adventus-3.jpeg"
-            ]
+    fotos: [
+        "adventus1.jpeg",
+        "adventus2.jpeg",
+        "adventus3.jpeg"
+    ]
 
-        },
+},
 
+enactus: {
 
-        enactus: {
+    puesto: "Vicepresidenta de Marketing | Enactus Hub UM (Oct 2025-Ago 2026)",
 
-            puesto: "Escribe aquí tu puesto",
+    herramientas: [
+        "Canva y herramientas de diseño y comunicación digital",
+        "Estrategias de marketing y comunicación institucional",
+        "Gestión de redes sociales y creación de contenido",
+        "Coordinación de equipos y gestión de proyectos"
+    ],
 
-            herramientas: [
-                "Herramienta 1",
-                "Herramienta 2"
-            ],
+    programas: [
+        "Fortalecimiento de la identidad y posicionamiento institucional de Enactus Hub UM",
+        "Desarrollo de estrategias de comunicación para la integración y participación de los miembros",
+        "Impulso al crecimiento del Hub, pasando de aproximadamente 15 a más de 70 integrantes"
+    ],
 
-            programas: [
-                "Programa 1",
-                "Programa 2"
-            ],
+    habituales: [
+        "Desarrollo de estrategias de comunicación interna",
+        "Gestión de reputación institucional orientada a la recuperación de imagen y al fortalecimiento de la identidad organizacional",
+        "Planeación y coordinación de iniciativas de marketing y comunicación",
+        "Organización y seguimiento de actividades del equipo de marketing",
+        "Coordinación con presidencia y otras áreas para alinear la comunicación con los objetivos del Hub"
+    ],
 
-            habituales: [
-                "Desarrollo de estrategias de comunicación interna",
-                "Gestión de reputación institucional orientada a la recuperación de imagen y al fortalecimiento de la identidad organizacional"
-            ],
+    extraordinarias: [
+        "Participación en el fortalecimiento y crecimiento organizacional del Hub, coordinando junto con presidencia un equipo de aproximadamente 70 integrantes y contribuyendo a consolidar su estructura como un espacio de desarrollo emprendedor"
+    ],
 
-            extraordinarias: [
-                "Escribe aquí una función extraordinaria"
-            ],
+    fotos: [
+        "enactus1.jpeg",
+        "enactus2.jpeg",
+        "enactus3.jpeg"
+    ]
 
-            fotos: [
-                "trayectoria-enactus-1.jpeg",
-                "trayectoria-enactus-2.jpeg",
-                "trayectoria-enactus-3.jpeg"
-            ]
-
-        },
-
-
-        jybsa: {
-
-            puesto: "Escribe aquí tu puesto",
-
-            herramientas: [
-                "Herramienta 1",
-                "Herramienta 2"
-            ],
-
-            programas: [
-                "Programa 1",
-                "Programa 2"
-            ],
-
-            habituales: [
-                "Apoyo en procesos de auditoría y reclutamiento",
-                "Revisión documental",
-                "Actualización de registros",
-                "Seguimiento de actividades del área de Recursos Humanos"
-            ],
-
-            extraordinarias: [
-                "Escribe aquí una función extraordinaria"
-            ],
-
-            fotos: [
-                "../assets/images/trayectoria-jybsa-1.jpeg",
-                "../assets/images/trayectoria-jybsa-2.jpeg",
-                "../assets/images/trayectoria-jybsa-3.jpeg"
-            ]
-
-        },
+},
 
 
-        club: {
+   jybsa: {
 
-            puesto: "Escribe aquí tu puesto",
+    puesto: "Practicante de Recursos Humanos (Oct-Nov 2026)",
 
-            herramientas: [
-                "Herramienta 1",
-                "Herramienta 2"
-            ],
+    herramientas: [
+        "Excel para el control y seguimiento de información administrativa y laboral",
+        "Herramientas digitales para la integración y digitalización de expedientes",
+        "Organización y gestión documental",
+        "Comunicación y seguimiento con colaboradores y candidatos"
+    ],
 
-            programas: [
-                "Programa 1",
-                "Programa 2"
-            ],
+    programas: [
+        "Preparación e integración de documentación para procesos de auditoría",
+        "Digitalización y actualización de expedientes del personal",
+        "Apoyo en la documentación relacionada con la NOM-035-STPS-2018"
+    ],
 
-            habituales: [
-                "Dirección y gestión organizacional del club",
-                "Planificación de programas formativos",
-                "Coordinación de equipos de consejeros",
-                "Supervisión de actividades y eventos"
-            ],
+    habituales: [
+        "Apoyo en la preparación y atención de requerimientos de auditoría",
+        "Integración, revisión, actualización y digitalización de expedientes del personal",
+        "Seguimiento de información de nómina fiscal e interna",
+        "Apoyo en procesos de reclutamiento y comunicación con candidatos",
+        "Registro y organización de documentación laboral y administrativa",
+        "Seguimiento de actividades y pendientes del área de Recursos Humanos"
+    ],
 
-            extraordinarias: [
-                "Escribe aquí una función extraordinaria"
-            ],
+    extraordinarias: [
+        "Asunción temporal de responsabilidades del área de Recursos Humanos tras la salida de la gerente, brindando apoyo directo a la gerente administrativa durante la preparación de una auditoría e integrando la documentación e información requerida para el proceso"
+    ],
 
-            fotos: [
-                "../assets/images/trayectoria-club-1.jpeg",
-                "../assets/images/trayectoria-club-2.jpeg",
-                "../assets/images/trayectoria-club-3.jpeg"
-            ]
+    fotos: [
+        "jybsa1.jpeg",
+        "jybsa2.jpeg",
+        "jybsa3.jpeg"
+    ]
 
+},
+
+club: {
+
+    puesto: "Subdirectora (2025) | Directora (2026)",
+
+    herramientas: [
+        "Excel y herramientas digitales para el control y seguimiento de información",
+        "Elaboración de informes y documentación administrativa",
+        "Organización de expedientes, carpetas y registros de participantes",
+        "Planeación de actividades y coordinación de equipos"
+    ],
+
+    programas: [
+        "Dirección y desarrollo organizacional del Club Aventureros Shaddai",
+        "Planificación de programas formativos y actividades para niños y jóvenes",
+        "Organización de iniciativas de servicio comunitario",
+        "Participación en la junta directiva de la iglesia junto con representantes de otros ministerios"
+    ],
+
+    habituales: [
+        "Dirección y gestión organizacional del club",
+        "Planificación de programas formativos y calendarios de actividades",
+        "Coordinación de equipos de consejeros y distribución de responsabilidades",
+        "Supervisión de actividades, eventos y cumplimiento de programas",
+        "Elaboración de informes y reportes de actividades",
+        "Integración y organización de carpetas y expedientes de participantes",
+        "Gestión de permisos, autorizaciones y documentación firmada por padres de familia",
+        "Comunicación y seguimiento con padres de familia y consejeros",
+        "Participación en reuniones de la junta directiva de la iglesia para evaluar iniciativas y tomar decisiones en conjunto con otros ministerios"
+    ],
+
+    extraordinarias: [
+        "Participación en la junta directiva de la iglesia, colaborando en la toma de decisiones organizacionales y la coordinación de iniciativas entre distintos ministerios, además de asumir la dirección del club durante 2026 después de desempeñarme como subdirectora en 2025"
+    ],
+
+    fotos: [
+        "club1.jpeg",
+        "club2.jpeg",
+        "club3.jpeg"
+    ]
+
+},
         }
 
     };
