@@ -166,123 +166,125 @@ document.addEventListener("DOMContentLoaded", () => {
 
         },
 
-        enactus: {
+enactus: {
 
-            puesto: "Vicepresidenta de Marketing | Enactus Hub UM (Oct 2025-Ago 2026)",
+    puesto: "Vicepresidenta de Marketing | Enactus Hub UM (Oct 2025-Ago 2026)",
 
-            herramientas: [
-                "Canva y herramientas de diseño y comunicación digital",
-                "Estrategias de marketing y comunicación institucional",
-                "Gestión de redes sociales y creación de contenido",
-                "Coordinación de equipos y gestión de proyectos"
-            ],
+    herramientas: [
+        "Comunicación organizacional y seguimiento individual",
+        "Articulación de equipos y coordinación de iniciativas",
+        "Estrategias de recuperación de confianza institucional",
+        "Organización mediante comisiones y programas"
+    ],
 
-            programas: [
-                "Fortalecimiento de la identidad y posicionamiento institucional de Enactus Hub UM",
-                "Desarrollo de estrategias de comunicación para la integración y participación de los miembros",
-                "Impulso al crecimiento del Hub, pasando de aproximadamente 15 a más de 70 integrantes"
-            ],
+    programas: [
+        "Recuperación organizacional del Hub tras una crisis heredada de la administración anterior",
+        "Mantenimiento de más de 45 integrantes activos con un equipo central de dos personas y apoyo distribuido en comisiones y programas",
+        "Implementación de estrategias de acercamiento, integración y participación de los miembros"
+    ],
 
-            habituales: [
-                "Desarrollo de estrategias de comunicación interna",
-                "Gestión de reputación institucional orientada a la recuperación de imagen y al fortalecimiento de la identidad organizacional",
-                "Planeación y coordinación de iniciativas de marketing y comunicación",
-                "Organización y seguimiento de actividades del equipo de marketing",
-                "Coordinación con presidencia y otras áreas para alinear la comunicación con los objetivos del Hub"
-            ],
+    habituales: [
+        "Comunicación individual 1:1 para mantener informados y vinculados a los integrantes",
+        "Seguimiento de la participación y atención de inquietudes",
+        "Identificación de habilidades para vincular miembros con actividades y comisiones",
+        "Coordinación de iniciativas de comunicación interna",
+        "Colaboración con presidencia en la organización y seguimiento del Hub"
+    ],
 
-            extraordinarias: [
-                "Participación en el fortalecimiento y crecimiento organizacional del Hub, coordinando junto con presidencia un equipo de aproximadamente 70 integrantes y contribuyendo a consolidar su estructura como un espacio de desarrollo emprendedor"
-            ],
+    extraordinarias: [
+        "Participación en el rescate organizacional del Hub después de una crisis institucional, articulando un equipo central de dos personas con integrantes que colaboraban mediante comisiones y programas. Las estrategias de acercamiento y recuperación de confianza permitieron mantener una comunidad de más de 45 miembros activos."
+    ],
 
-            fotos: [
-                "enactus1.jpeg",
-                "enactus2.jpeg",
-                "enactus3.jpeg"
-            ]
+    fotos: [
+        "enactus1.jpeg",
+        "enactus2.jpeg",
+        "enactus3.jpeg"
+    ]
 
-        },
+},
 
 
-        jybsa: {
+     
+jybsa: {
 
-            puesto: "Practicante de Recursos Humanos (Oct-Nov 2026)",
+    puesto: "Practicante de Recursos Humanos (Oct-Nov 2026)",
 
-            herramientas: [
-                "Excel para el control y seguimiento de información administrativa y laboral",
-                "Herramientas digitales para la integración y digitalización de expedientes",
-                "Organización y gestión documental",
-                "Comunicación y seguimiento con colaboradores y candidatos"
-            ],
+    herramientas: [
+        "Excel para el control, revisión y seguimiento de información",
+        "Organización, integración y digitalización de expedientes",
+        "Gestión documental para procesos de auditoría",
+        "Comunicación y seguimiento con colaboradores y candidatos"
+    ],
 
-            programas: [
-                "Preparación e integración de documentación para procesos de auditoría",
-                "Digitalización y actualización de expedientes del personal",
-                "Apoyo en la documentación relacionada con la NOM-035-STPS-2018"
-            ],
+    programas: [
+        "Preparación documental y atención de requerimientos para auditoría",
+        "Revisión, integración y actualización de expedientes del personal",
+        "Organización de información laboral, fiscal y administrativa",
+        "Apoyo en la documentación relacionada con la NOM-035-STPS-2018"
+    ],
 
-            habituales: [
-                "Apoyo en la preparación y atención de requerimientos de auditoría",
-                "Integración, revisión, actualización y digitalización de expedientes del personal",
-                "Seguimiento de información de nómina fiscal e interna",
-                "Apoyo en procesos de reclutamiento y comunicación con candidatos",
-                "Registro y organización de documentación laboral y administrativa",
-                "Seguimiento de actividades y pendientes del área de Recursos Humanos"
-            ],
+    habituales: [
+        "Recopilación, revisión y organización de evidencias documentales para auditoría",
+        "Integración, digitalización y actualización de expedientes del personal",
+        "Verificación y seguimiento de información de nómina fiscal e interna",
+        "Control de documentación laboral y administrativa",
+        "Apoyo en reclutamiento y comunicación con candidatos",
+        "Seguimiento de requerimientos y pendientes del área de Recursos Humanos"
+    ],
 
-            extraordinarias: [
-                "Asunción temporal de responsabilidades del área de Recursos Humanos tras la salida de la gerente, brindando apoyo directo a la gerente administrativa durante la preparación de una auditoría e integrando la documentación e información requerida para el proceso"
-            ],
+    extraordinarias: [
+        "Asunción temporal de responsabilidades de Recursos Humanos tras la salida de la gerente, brindando apoyo directo a la gerente administrativa en la preparación de auditoría, recopilación de evidencias e integración de información y documentación requerida."
+    ],
 
-            fotos: [
-                "jybsa1.jpg",
-                "jybsa2.jpeg",
-                "jybsa3.jpeg"
-            ]
+    fotos: [
+        "jybsa1.jpg",
+        "jybsa2.jpeg",
+        "jybsa3.jpeg"
+    ]
 
-        },
+},
 
-        club: {
 
-            puesto: "Subdirectora (2025) | Directora (2026)",
+      
+club: {
 
-            herramientas: [
-                "Excel y herramientas digitales para el control y seguimiento de información",
-                "Elaboración de informes y documentación administrativa",
-                "Organización de expedientes, carpetas y registros de participantes",
-                "Planeación de actividades y coordinación de equipos"
-            ],
+    puesto: "Subdirectora (2025) | Directora (2026)",
 
-            programas: [
-                "Dirección y desarrollo organizacional del Club Aventureros Shaddai",
-                "Planificación de programas formativos y actividades para niños y jóvenes",
-                "Organización de iniciativas de servicio comunitario",
-                "Participación en la junta directiva de la iglesia junto con representantes de otros ministerios"
-            ],
+    herramientas: [
+        "Planeación estratégica y programación",
+        "Coordinación y seguimiento de planes de trabajo",
+        "Excel para el control y seguimiento de información",
+        "Elaboración de informes y documentación administrativa"
+    ],
 
-            habituales: [
-                "Dirección y gestión organizacional del club",
-                "Planificación de programas formativos y calendarios de actividades",
-                "Coordinación de equipos de consejeros y distribución de responsabilidades",
-                "Supervisión de actividades, eventos y cumplimiento de programas",
-                "Elaboración de informes y reportes de actividades",
-                "Integración y organización de carpetas y expedientes de participantes",
-                "Gestión de permisos, autorizaciones y documentación firmada por padres de familia",
-                "Comunicación y seguimiento con padres de familia y consejeros",
-                "Participación en reuniones de la junta directiva de la iglesia para evaluar iniciativas y tomar decisiones en conjunto con otros ministerios"
-            ],
+    programas: [
+        "Planeación anual del Club Aventureros Shaddai en coordinación con su directiva",
+        "Participación en la planeación institucional de la iglesia mediante su junta directiva",
+        "Desarrollo de programas formativos y actividades para niños",
+        "Organización de iniciativas de servicio comunitario"
+    ],
 
-            extraordinarias: [
-                "Participación en la junta directiva de la iglesia, colaborando en la toma de decisiones organizacionales y la coordinación de iniciativas entre distintos ministerios, además de asumir la dirección del club durante 2026 después de desempeñarme como subdirectora en 2025"
-            ],
+    habituales: [
+        "Participación en reuniones de directiva para establecer objetivos, programas y calendarios de trabajo",
+        "Planeación y coordinación de actividades conforme a los acuerdos de la directiva",
+        "Participación en la junta directiva de la iglesia para planificar iniciativas y coordinar esfuerzos entre ministerios",
+        "Distribución de responsabilidades y seguimiento de los planes acordados",
+        "Supervisión del desarrollo de programas y evaluación de actividades",
+        "Elaboración de informes, expedientes y documentación administrativa",
+        "Gestión de permisos y autorizaciones con padres de familia"
+    ],
 
-            fotos: [
-                "club1.jpeg",
-                "club2.jpeg",
-                "club3.jpeg"
-            ]
+    extraordinarias: [
+        "Participación en espacios de planeación y toma de decisiones a nivel de club e iglesia, colaborando con distintas directivas en la definición y coordinación de programas e iniciativas. En 2026 asumí la dirección del club después de desempeñarme como subdirectora durante 2025."
+    ],
 
-        }
+    fotos: [
+        "club1.jpeg",
+        "club2.jpeg",
+        "club3.jpeg"
+    ]
+
+},
 
     };
 
