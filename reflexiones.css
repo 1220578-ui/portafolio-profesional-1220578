@@ -216,14 +216,37 @@ h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1; lett
 .photoRow .photo:nth-child(3) { rotate: -1deg; }
 
 /* ---------- RECAP Y AGRADECIMIENTO ---------- */
+.recap {
+    background-color: var(--lime) !important;
+    color: #151a12;
+}
 
-.recap { background: var(--lime); }
-.recap .sectionLabel { color: rgba(21,26,18,.7); }
+.recap .sectionLabel {
+    color: rgba(21, 26, 18, .7);
+}
+.recap {
+    width: 100%;
+}
 
-.recapHead { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; flex-wrap: wrap; margin-bottom: 28px; }
-.recapHead h2 { font-size: clamp(52px, 9vw, 110px); letter-spacing: -5px; }
-.recapHead p { max-width: 360px; font-size: 13px; line-height: 1.9; font-weight: 500; }
+.recapHead {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    align-items: end;
+    gap: 0;
+}
 
+.recapHead > div {
+    min-width: 0;
+}
+
+.recapHead p {
+    width: 120%;
+    max-width: none;
+    margin: 0;
+    padding-left: 250px;
+    box-sizing: border-box;
+}
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 1fr; gap: 14px; }
 .gallery .photo { aspect-ratio: 1; background: rgba(21,26,18,.14); border: 6px solid var(--white); transition: rotate var(--transition), transform var(--transition); }
 .gallery .photo:nth-child(2) { rotate: 2deg; }
@@ -321,8 +344,13 @@ h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1; lett
 
   .recapHead { margin-bottom: 18px; }
   .recapHead h2 { font-size: clamp(44px, 9vh, 96px); letter-spacing: -4px; }
-  .recapHead p { max-width: 340px; font-size: 12px; line-height: 1.7; }
-
+.recapHead p {
+    width: 90%;
+    max-width: none;
+    flex: 1;
+    font-size: 13px;
+    line-height: 1.8;
+}
   .gallery { flex: 1; min-height: 0; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .gallery .photo { aspect-ratio: auto; }
   .gallery .big { aspect-ratio: auto; }
