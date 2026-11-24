@@ -386,12 +386,13 @@ button {
 .sc-line-big {
     font-weight: 800;
     letter-spacing: -.045em;
+    padding-right: .045em;   /* compensa el espaciado negativo: centrado óptico */
     color: var(--white);
 }
 
 .sc-line-thin {
     margin-top: .14em;
-    padding: .06em .22em .1em;
+    padding: .06em .25em .1em .22em;   /* el lado derecho compensa el espaciado negativo */
     font-size: .55em;
     font-weight: 800;
     letter-spacing: -.03em;
@@ -399,7 +400,6 @@ button {
     background: var(--lime);
     border-radius: var(--radius);
     box-shadow: 0 0 22px var(--glow);
-    rotate: -1.5deg;
 }
 
 .sc-career {
