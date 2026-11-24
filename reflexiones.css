@@ -378,6 +378,63 @@ h2 { font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; line-height: 1; lett
 
 /* ---------- PIE DE PÁGINA ---------- */
 
+/* FOOTER */
+.mainFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: 35px 7%;
+    border-top: 1px solid var(--line);
+}
+
+.footerIdentity {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footerIdentity p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footerLabel {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+}
+
+.footerContact a,
+.footerBack {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.82rem;
+    transition: color 0.2s ease;
+}
+
+.footerContact a:hover,
+.footerBack:hover {
+    color: var(--lime-dark);
+}
+
+@media (max-width: 650px) {
+    .mainFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+}
+
+
 .mainFooter { min-height: 85px; padding: 22px 8%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; background: var(--white); }
 .mainFooter p { color: var(--muted); font-size: 10px; letter-spacing: .4px; }
 .mainFooter > a:last-child { font-size: 10px; font-weight: 700; }
