@@ -583,8 +583,7 @@ a1: {
 },
         a2: {
             titulo: "Desarrollo integral",
-            descripcion: "También comprendí que mi propósito no está únicamente relacionado con alcanzar responsabilidades o dirigir equipos, sino con la manera en que trato a las personas que me rodean. Reconocer que otros también enfrentan dificultades me ha llevado a procurar ser una líder que escucha, orienta y acompaña, reflejando en sus acciones el ejemplo de Jesús.",
-            fotos: ["cosmovision2.jpeg",
+descripcion: "Comprendí que el propósito de mi liderazgo no está en los cargos que alcance o en la posición que ocupe, sino en la huella que dejo en las personas con las que convivo. Esta reflexión me llevó a reconocer la importancia de escuchar, comprender y acompañar a quienes enfrentan dificultades, procurando que mi manera de relacionarme con los demás refleje el ejemplo de Jesús."            fotos: ["cosmovision2.jpeg",
                     "cosmovision21.jpeg"
             ],
             documento: "https://drive.google.com/file/d/1Hqxd2IjOOGnM5e1XnBPzR6Y1jA8MzOZI/view?usp=sharinghttps://drive.google.com/file/d/1YUPW-MJ10kEBSWKeIqphEqYPTwGgpeTS/view?usp=sharing"
@@ -592,8 +591,7 @@ a1: {
 
         b1: {
             titulo: "Fintech ante la ia",
-            descripcion: "A través del análisis del mercado FINTECH, aprendí a identificar y comparar los marcos regulatorios de distintos países, como México, China, Estados Unidos y Reino Unido, así como a reconocer cómo las disposiciones legales condicionan la operación, expansión y competitividad de las empresas.",
-            fotos: ["conocimiento11.png",
+descripcion: "Investigué el mercado FINTECH en México, China, Estados Unidos y Reino Unido, recopilando y comparando sus respectivos marcos regulatorios. Revisé las disposiciones legales aplicables al sector e identifiqué diferencias en los requisitos de operación, supervisión y prestación de servicios financieros. El análisis me permitió comprender cómo la regulación influye en las oportunidades de expansión y las condiciones de competencia de las empresas FINTECH."            fotos: ["conocimiento11.png",
                 "conocimiento12.png",
                 "conocimiento13.png"
             ],
@@ -602,8 +600,7 @@ a1: {
 
         b2: {
             titulo: "Indicadores Unión Europea",
-            descripcion: "Analicé los principales indicadores económicos de la Unión Europea, identificando tendencias y diferencias entre sus países. El desarrollo de un dashboard interactivo en R me permitió comparar los 27 países entre 2010 y 2023 y fortalecer mi capacidad para interpretar datos y convertirlos en información útil para la toma de decisiones.",
-            fotos: ["conocimiento21.png",
+descripcion: "Recopilamos y analizamos los principales indicadores económicos de la Unión Europea, identificando tendencias y diferencias entre sus países. Desarrollamos un dashboard interactivo en R para consultar, comparar y visualizar información de los 27 países durante el periodo 2010-2023. El trabajo implicó organizar las bases de datos, seleccionar indicadores, construir visualizaciones e interpretar los resultados para identificar cambios y comportamientos económicos a lo largo del tiempo."            fotos: ["conocimiento21.png",
                 "conocimiento22.png",
                 "conocimiento23.png",
                 "conocimiento24.png"
@@ -613,8 +610,7 @@ a1: {
 
         c1: {
             titulo: "Jaztea en el mercado tunecino",
-            descripcion: "Para encontrar una forma viable de introducir la marca en Túnez, considerando que sus hábitos de consumo y condiciones de mercado eran distintos a los del mercado de origen. Analizamos las barreras de entrada, la competencia y las preferencias locales para detectar qué aspectos de la propuesta original podían representar un obstáculo.",
-            fotos: [ "investigacion12.png",
+descripcion: "Analizamos las condiciones del mercado tunecino para determinar la viabilidad de introducir JAZTEA en el país. Investigamos los hábitos de consumo, las preferencias locales, la competencia y las barreras de entrada, identificando las diferencias respecto al mercado de origen. Con base en estos hallazgos, evaluamos los ajustes necesarios en la propuesta comercial y las alternativas para facilitar su ingreso al mercado."            fotos: [ "investigacion12.png",
                 "investigacion13.png",
                 "investigacion11.png"
             ],
@@ -623,8 +619,7 @@ a1: {
 
         c2: {
             titulo: "Pensamiento crítico",
-            descripcion: "En esta investigación analicé la relación entre resiliencia y desempeño laboral mediante pruebas estadísticas y análisis de clústeres, identificando patrones y perfiles que permitieron interpretar los resultados y formular conclusiones sobre ambas variables en las PyMEs.",
-            fotos: ["investigacion21.png",
+descripcion: "Participé en el análisis estadístico de una investigación sobre resiliencia y desempeño laboral en PyMEs. El trabajo incluyó la revisión y preparación de datos, aplicación de pruebas estadísticas, análisis de relaciones entre variables y segmentación mediante clústeres. A partir de los resultados, identificamos patrones y agrupaciones que facilitaron la interpretación de los datos y la elaboración de conclusiones."            fotos: ["investigacion21.png",
                 "investigacion22.png",
                 "investigacion23.png"
             ],
@@ -633,8 +628,7 @@ a1: {
 
         d1: {
             titulo: "Proyecto integrador: Xëpi",
-            descripcion: "Organizamos el trabajo por áreas y distribuimos las actividades según las habilidades y conocimientos de cada integrante. Esto permitió establecer responsabilidades claras, coordinar los avances y conectar las aportaciones individuales para desarrollar cada etapa del proyecto.",
-            fotos: ["integracion13.jpeg",
+descripcion: "Organizamos el proyecto por áreas de trabajo, distribuyendo las actividades de acuerdo con los conocimientos y habilidades de cada integrante. Definimos responsabilidades, establecimos una secuencia de trabajo y coordinamos los avances para integrar las distintas aportaciones. Durante el desarrollo, mantuvimos comunicación para resolver pendientes, revisar resultados y asegurar que cada área aportara a la construcción del proyecto completo.",            fotos: ["integracion13.jpeg",
                 "integracion11.jpeg",
                 "integracion12.jpeg"],
             documento: "https://drive.google.com/file/d/1t1vi8V6j7gCY7gejg2Fe4yVqnTEKZIuT/view?usp=sharing"   // enlace a tu documento (Drive, PDF, etc.)
