@@ -4,10 +4,10 @@
 
 :root {
     /* Paleta (cámbiala aquí y se actualiza toda la portada) */
-    --accent: #f2c879;   /* dorado suave */
-    --coral:  #e98a6b;
-    --sage:   #9cc7a8;
-    --sky:    #9ec3e6;
+    --accent: #d8ff68;   /* verde lima original */
+    --coral:  #b4e86a;   /* verde hoja */
+    --sage:   #8fd19e;   /* verde menta */
+    --sky:    #c9efd6;   /* verde claro */
     --ink:    #0d1110;
     --white:  #ffffff;
     --cycle:  20s;       /* 4 fotos x 5s */
